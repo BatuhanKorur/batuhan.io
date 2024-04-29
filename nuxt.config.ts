@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        '@nuxt/eslint',
+        '@nuxtjs/i18n',
         'nuxt-icon'
     ],
     css: [
@@ -12,8 +12,19 @@ export default defineNuxtConfig({
             meta: [
                 {charset: 'utf-8'},
                 {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+
             ]
         }
+    },
+    i18n: {
+        defaultLocale: 'en',
+        langDir: 'lang',
+        locales: [
+            {
+                code: 'en',
+                file: 'en.yaml',
+            },
+        ],
     },
     postcss: {
         plugins: {

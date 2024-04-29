@@ -19,6 +19,18 @@
     }
 }
 
+html {
+    @apply font-sans antialiased bg-black;
+}
+
 body {
-    @apply font-sans antialiased;
+    @apply h-screen w-screen p-[14px];
+
+    #__nuxt {
+        @apply border border-carbon h-full rounded-lg;
+    }
+}
+
+.f-between {
+    @apply flex items-center justify-between;
 }
