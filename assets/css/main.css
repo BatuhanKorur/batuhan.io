@@ -1,36 +1,25 @@
+@import './utils.pcss';
+@import './transitions.pcss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
     @font-face {
         font-family: 'HelveticaNow';
         font-style: normal;
         font-weight: 1 999;
-        font-display: swap;
         src: url('../fonts/HelveticaNow.woff2') format('woff2');
     }
     @font-face {
-        font-family: 'Oceanwide';
+        font-family: 'JetBrains Mono';
         font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url('../fonts/Oceanwide.woff2') format('woff2');
+        font-weight: 1 999;
+        src: url('../fonts/Jetbrains.woff2') format('woff2');
     }
-}
-
-html {
-    @apply font-sans antialiased bg-black;
 }
 
 body {
-    @apply h-screen w-screen p-[14px];
-
-    #__nuxt {
-        @apply border border-carbon h-full rounded-lg;
-    }
+    @apply font-sans antialiased bg-black;
 }
 
-.f-between {
-    @apply flex items-center justify-between;
-}

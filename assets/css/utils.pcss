@@ -1,0 +1,26 @@
+.f-center {
+    @apply flex items-center justify-center;
+}
+
+.f-between {
+    @apply flex items-center justify-between;
+}
+
+.t-200 {
+    @apply transition duration-200 ease-in-out;
+}
+
+.content {
+    p {
+        @apply text-grey-100 text-[14.5px] leading-[1.4em] tracking-[-0.1px] text-pretty;
+    }
+
+    ul {
+        @apply list-inside list-disc;
+    }
+
+    li {
+        @apply first:pt-2 pb-2;
+        @apply text-grey-200 font-[325] text-[13.75px] leading-[1.39em] text-pretty break-words;
+    }
+}

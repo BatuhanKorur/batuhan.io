@@ -1,15 +1,56 @@
-about:
-  1: >
-    I began coding at 13, 
-    starting with Visual Basic to make simple applications and sharing them online. 
+hello: "Hello 👋, I'm"
+about: 'About'
+portfolio: 'Portfolio'
+contact: 'Contact'
+
+about_me:
+  - I began coding at 13,
+    starting with Visual Basic to make simple applications and sharing them online.
     Now, 14 years later, my passion has evolved into a career, specializing in web and mobile app development.
-  2: >
-    Dedicated to lifelong learning in software development, 
-    I have earned three MCSA certifications from Microsoft, 
-    covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net. 
-    My linguistic studies, which resulted in a bachelor’s degree from Istanbul University, 
+  - Dedicated to lifelong learning in software development,
+    I have earned three MCSA certifications from Microsoft,
+    covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net.
+    My linguistic studies, which resulted in a bachelor’s degree from Istanbul University,
     have equipped me to effectively communicate complex UI concepts to a broad range of users.
-  3: >
-    My technical proficiency centres on JavaScript, 
-    including its popular frameworks Vue and React, 
+  - My technical proficiency centres on JavaScript,
+    including its popular frameworks Vue and React,
     and extends to PHP and Laravel, accompanied by a diverse toolkit of other technologies.
+
+work_experience:
+  reachin:
+    desc: Led the development of a cross-platform mobile application for iOS and Android utilizing the Ionic Framework. Additionally, created a web-based tool designed to streamline business and customer-centric operations.
+    list:
+      - Developed a hybrid mobile application for iOS and Android that communicates with an API backend.
+      - Engaged with diverse external APIs, including Stripe for secure payments, AWS for storage solutions, and Onyx for streamlined data collection processes.
+      - Designed and developed APIs leveraging PHP and Laravel to manage essential functionalities like user authentication, product ordering, real-time messaging, and financial operations within an embedded wallet system.
+      - Engineered a web application utilizing Laravel, Inertia.js, Vue, and Typescript, dedicated to overseeing business operations efficiently.  Built features like automated email generation and delivery, comprehensive marketing analytics tools, and seamless financial operations management."
+  brickhunter:
+    desc: Full-stack developer responsible for redesigning and developing UI/UX for the customer-facing e-commerce platform.
+    list:
+      - Designed and developed a more modern UI to enhance the platform's visual appeal and user experience, utilizing Laravel with Livewire and Alpine.js
+      - Revamped the outdated Laravel codebase and built new APIs for the customer-facing website.
+      - Implemented a new blogging system and content control for business managers using Storyblok, ensuring a user-friendly and efficient experience for our technical team members.
+      - Enhanced the internal business management CRM by building new modules and improved user experience to optimize workflow efficiency.
+  ups:
+    desc: Joined the UPS family to work on transforming business operations to a digital workflow using web and mobile apps.
+    list:
+      - Designed and developed an extensive single-page application with a strong emphasis on user experience. Handling various business operations ranging from CRM, invoice generation, delivery tracking, and marketing metrics capture.
+      - Contributed to developing an in-app messaging system, enhancing internal communication within the business for more effective and efficient operations.
+      - Developed a mobile application for couriers to easily manage their delivery status, automatically generate and print PDF documents, and handle delivery trajectories.
+  uibears:
+    desc: Co-created a business with the goal of creating and publishing high-quality UI/UX products for both designers and developers.
+    list:
+      - Developed a digital product named Krom Wireframe Kit based on Atomic Design System to help UI/UX designer creating faster and better wireframe processes.
+      - Developed detailed front-end UI Libraries for both Vue and React.
+  okami_creative:
+    desc: Started a digital agency business focusing on creating interactive and engaging business applications. Worked on a diverse range of projects, including e-commerce platforms, landing pages, and mobile applications.
+    list:
+      - Initiated and developed on creating a web application for valet parking business to easily track customers and business metrics.
+      - Created a digitized restaurant menu for tablets, elevating the customer experience to a more luxurious level while also providing an easily managed process to update menu items, enhancing the business's agility and efficiency.
+
+
+ups_tracking_app:
+  desc: ACT Responsable is a french association created to identify and collect the best communications campaigns
+    around the world in order to raise awareness on social and environmental issues (solidarity, environment,
+    human rights and education). The aim was to redesign the french website by focusing on their actions which are
+    exhibitions, schools interventions or even the NG’Ad club.

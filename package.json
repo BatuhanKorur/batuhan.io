@@ -10,6 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.6.0",
+    "@unhead/vue": "^1.9.7",
+    "@vueuse/core": "^10.9.0",
     "nuxt": "^3.11.2",
     "vue": "^3.4.26",
     "vue-router": "^4.3.2"
@@ -17,10 +20,13 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.0",
     "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/seo": "^2.0.0-rc.10",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
+    "nuxt-gtag": "^2.0.5",
     "nuxt-icon": "^0.6.10",
     "postcss": "^8.4.38",
+    "postcss-import": "^16.1.0",
     "tailwindcss": "^3.4.3"
   }
 }
