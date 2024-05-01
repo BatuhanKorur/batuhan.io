@@ -175,17 +175,17 @@
 	</div>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .donut {
-	animation: spin 60s linear infinite;
+	animation: spin 6s linear infinite;
 
 	@apply absolute;
-	@apply bottom-8 -right-24;
-	@apply md:bottom-12 md:-right-16;
+	@apply -bottom-12 -right-28;
+	@apply md:bottom-10 md:-right-12;
 	@apply lg:bottom-14 lg:right-10;
 
 	svg {
-		@apply scale-[1.15] md:scale-[1.25] lg:scale-[1.7];
+		@apply scale-[1] md:scale-[1.5] lg:scale-[1.7];
 	}
 }
 

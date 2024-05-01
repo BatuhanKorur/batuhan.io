@@ -1,14 +1,17 @@
-export default [
-    {
-        name: 'ri:linkedin-box-fill',
-        href: 'https://www.linkedin.com/in/batuhankorur/',
+export default {
+    github: {
+        icon: 'ri:github-fill',
+        url: 'https://github.com/BatuhanKorur',
+        url_pretty: 'github.com/BatuhanKorur'
     },
-    {
-        name: 'ri:github-fill',
-        href: 'https://github.com/BatuhanKorur',
+    linkedin: {
+        icon: 'ri:linkedin-box-fill',
+        url: 'https://www.linkedin.com/in/batuhankorur/',
+        url_pretty: 'linkedin.com/in/batuhankorur'
     },
-    {
-        name: 'ri:instagram-fill',
-        href: 'https://www.instagram.com/batuhan.korur/',
-    },
-]
+    instagram: {
+        icon: 'ri:instagram-fill',
+        url: 'https://www.instagram.com/batuhan.korur/',
+        url_pretty: 'instagram.com/batuhan.korur'
+    }
+}

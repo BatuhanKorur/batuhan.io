@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import socials from '@/config/socials'
 </script>
 
 <template>
@@ -15,7 +16,10 @@
 			<Code n="2">
 				<template #variable>email</template>
 				<template #string>
-					<NuxtLink to="/" class="underline">mail@batuhan.io</NuxtLink>
+					<div class="code_link group">
+						<NuxtLink to="mailto:mail@batuhan.io">mail@batuhan.io</NuxtLink>
+						<div class="line group-hover:opacity-100" />
+					</div>
 				</template>
 			</Code>
 			<Code n="3" />
@@ -38,7 +42,10 @@
 			<Code n="8">
 				<template #prop>url</template>
 				<template #string>
-					<NuxtLink to="/" class="underline">github.com/BatuhanKorur</NuxtLink>
+					<div class="code_link group">
+						<NuxtLink :to="socials.github.url" target="_blank">{{ socials.github.url_pretty }}</NuxtLink>
+						<div class="line group-hover:opacity-100" />
+					</div>
 				</template>
 			</Code>
 			<Code n="9">
@@ -54,7 +61,10 @@
 			<Code n="12">
 				<template #prop>url</template>
 				<template #string>
-					<NuxtLink to="/" class="underline">linkedin.com/in/BatuhanKorur</NuxtLink>
+					<div class="code_link group">
+						<NuxtLink :to="socials.linkedin.url" target="_blank">{{ socials.linkedin.url_pretty }}</NuxtLink>
+						<div class="line group-hover:opacity-100" />
+					</div>
 				</template>
 			</Code>
 			<Code n="13">
@@ -70,7 +80,10 @@
 			<Code n="16">
 				<template #prop>url</template>
 				<template #string>
-					<NuxtLink to="/" class="underline">instagram.com/batuhan.korur</NuxtLink>
+					<div class="code_link group">
+						<NuxtLink :to="socials.instagram.url" target="_blank">{{ socials.instagram.url_pretty }}</NuxtLink>
+						<div class="line group-hover:opacity-100" />
+					</div>
 				</template>
 			</Code>
 			<Code n="13">

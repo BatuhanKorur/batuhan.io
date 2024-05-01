@@ -4,24 +4,61 @@ const route = useRoute()
 
 <template>
 	<NuxtLayout>
-		<div class="grow flex items-center justify-center">
+		<div class="f-center pt-[10vh]">
 			<div>
-				<div class="bg-red-800/30 px-5 py-3.5 rounded">
-					<p class="text-base font-mono text-red-400 font-medium">
-						[HTTP/1.1 <span class="font-bold text-red-300">404 Page not found</span>]
-					</p>
-					<p class="text-sm font-mono text-red-400 pt-1">
-						GET <span class="underline">https://batuhan.io{{ route.fullPath }}</span>
-					</p>
-				</div>
-				<div class="w-full flex flex-row-reverse pt-4">
-					<NuxtLink to="/" class="border border-carbon inline-flex px-4 py-2 rounded-md">
-						<p class="font-mono text-light/90 text-base font-semibold">
-							Return Home
+				<div class="border border-carbon rounded divide-y divide-carbon">
+					<div class="bg-red-800/25 px-5 py-4 rounded-t">
+						<p class="text-sm font-mono text-red-400 font-medium">
+							[HTTP/1.1 <span class="font-bold text-red-300">404 Page not found</span>]
 						</p>
-					</NuxtLink>
+						<p class="text-xs font-mono text-red-400/80 pt-0.5">
+							GET <span class="underline">https://batuhan.io{{ route.fullPath }}</span>
+						</p>
+					</div>
+					<div class="network-item">
+						<label>Status</label>
+						<p>404 Page not found: {{ route.fullPath }}</p>
+					</div>
+					<div class="network-item">
+						<label>Version</label>
+						<p>HTTP/1.1</p>
+					</div>
+					<div class="network-item">
+						<label>Transferred</label>
+						<p>17.65 kB (17.44 kB size)</p>
+					</div>
+					<div class="network-item">
+						<label>Request Priority</label>
+						<p>Highest</p>
+					</div>
+					<div class="network-item">
+						<label>DNS Resolution</label>
+						<p>System</p>
+					</div>
 				</div>
+				<NuxtLink
+					to="/"
+					class="border border-carbon inline-flex px-6 py-4 rounded bg-grey-400/5 w-full f-center mt-6 t-200 hover:opacity-80"
+				>
+					<p class="text-sm font-bold font-mono text-light">
+						Return Home
+					</p>
+				</NuxtLink>
 			</div>
 		</div>
 	</NuxtLayout>
 </template>
+
+<style scoped lang="postcss">
+.network-item {
+	@apply px-4 py-3;
+
+	label {
+		@apply text-xxs text-grey-300/75 font-mono uppercase;
+	}
+
+	p {
+		@apply text-xs text-grey-100 font-[450];
+	}
+}
+</style>

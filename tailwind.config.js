@@ -13,6 +13,9 @@ export default {
 			mono: ['JetBrains Mono', 'sans-serif'],
 		},
 		fontSize: {
+			'xxs': ['12px', {
+				lineHeight: '1.4em',
+			}],
 			'xs': ['13px', {
 				lineHeight: '1.4em',
 			}],
@@ -28,7 +31,7 @@ export default {
 			'lg': ['18px', {
 				lineHeight: '1.4em',
 			}],
-			'xl': ['21px', {
+			'xl': ['20px', {
 				lineHeight: '1.4em',
 			}],
 			'2xl': ['24px', {
@@ -49,12 +52,9 @@ export default {
 					100: '#e1e4f0',
 				},
 				code: {
-					line: '#828C95',
-					keyword: '#FF7774',
-					variable: '#72BEFC',
-					string: '#9ED2F9',
-					comment: '#59626A',
-					operator: '#E5ECF2',
+					keyword: '#F97583',
+					label: '#79B8FF',
+					string: '#9CD7B9',
 				},
 			},
 		},

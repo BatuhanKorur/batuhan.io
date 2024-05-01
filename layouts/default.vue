@@ -10,7 +10,7 @@ const menuOpen = ref(false)
 		<div class="container">
 			<Navbar v-model="menuOpen" class="z-50" />
 			<div class="grow flex flex-col h-full">
-				<Transition mode="out-in">
+				<Transition name="menu" mode="out-in">
 					<div v-if="menuOpen" class="grow">
 						<NuxtLink
 							v-for="link in routes"
@@ -19,7 +19,7 @@ const menuOpen = ref(false)
 							@click="menuOpen = false"
 						>
 							<div class="border-b border-carbon px-6 h-[70px] flex items-center">
-								<p class="text-light font-mono text-base lowercase font-[450]">
+								<p class="text-light font-mono text-base lowercase font-[425]">
 									{{ $t(link.label) }}
 								</p>
 							</div>
@@ -30,28 +30,28 @@ const menuOpen = ref(false)
 							<div class="grow h-full">
 								<slot />
 							</div>
-							<div
-								class="shrink-0 backdrop-blur-2xl rounded-b-md z-50 bg-transparent f-between border-t border-carbon h-[44px] md:h-[52px]"
-							>
-								<LocaleSwitch />
-								<div class="flex">
-									<NuxtLink
-										v-for="social in socials"
-										:key="social.name"
-										class="border-l border-carbon f-center h-[44px] w-[48px] md:h-[52px] md:w-[58px]"
-										:to="social.href"
-										target="_blank"
-									>
-										<Icon
-											:name="social.name"
-											class="size-6 text-grey-100 opacity-50 t-200 hover:opacity-100"
-										/>
-									</NuxtLink>
-								</div>
-							</div>
 						</div>
 					</template>
 				</Transition>
+				<div
+					class="shrink-0 rounded-b-md z-50 f-between border-t border-carbon h-[44px] md:h-[52px]"
+				>
+					<LocaleSwitch />
+					<div class="flex">
+						<NuxtLink
+							v-for="[key, value] in Object.entries(socials)"
+							:key="key"
+							class="border-l border-carbon f-center h-[44px] w-[48px] md:h-[52px] md:w-[58px]"
+							:to="value.url"
+							target="_blank"
+						>
+							<Icon
+								:name="value.icon"
+								class="size-6 text-grey-100 opacity-50 t-200 hover:opacity-100"
+							/>
+						</NuxtLink>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -59,14 +59,13 @@ const menuOpen = ref(false)
 
 <style scoped lang="postcss">
 .wrapper {
-	@apply flex flex-col min-h-screen h-full w-full;
+	@apply flex flex-col min-h-svh w-full p-3 md:p-4 lg:p-6;
 	@apply lg:max-w-screen-xl lg:mx-auto;
-	@apply p-3 md:p-4 lg:p-6;
 }
 
 .container {
 	@apply grow flex flex-col min-w-full;
-	@apply border border-carbon rounded-[7px];
+	@apply border border-carbon rounded-[6px] md:rounded-[8px];
 	@apply bg-indigo-900 bg-opacity-[3%];
 }
 </style>

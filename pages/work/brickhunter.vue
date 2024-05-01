@@ -2,7 +2,7 @@
 </script>
 
 <template>
-	<div class="portfolio_container">
+	<div class="c-portfolio-container">
 		<PortfolioHead
 			title="Brickhunter"
 			img="brickhunter.png"
@@ -12,9 +12,6 @@
 			:stack="['javascript', 'vue', 'laravel', 'storyblok-icon', 'tailwindcss-icon']"
 		/>
 		<section class="py-16">
-			<h2 class="h2">
-				Design System
-			</h2>
 			<PortfolioImage img="brickhunter/01" />
 			<PortfolioImage img="brickhunter/02" />
 		</section>

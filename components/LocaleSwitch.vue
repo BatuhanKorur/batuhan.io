@@ -24,30 +24,26 @@ onClickOutside(target, () => isOpen.value = false)
 	<div class="px-4 md:px-5 md:py-3 relative">
 		<p class="font-mono text-xs md:text-sm space-x-1" @click="handleMenu(!isOpen)">
 			<span class="text-code-keyword">const</span>
-			<span class="text-code-variable">locale</span>
+			<span class="text-code-label font-[450]">locale</span>
 			<span class="text-code-keyword">=</span>
 			<span class="text-code-string uppercase">'{{ locale }}'</span>
 		</p>
 		<Transition>
 			<div v-if="isOpen" ref="target">
-				<div class="absolute border border-carbon bg-black -right-7 bottom-7 w-44 rounded-md divide-y divide-carbon">
-					<div class="f-between px-3.5 py-2.5 t-200 hover:backdrop-brightness-150" @click="switchLocale('tr')">
-						<p class="text-code-string font-mono text-[12.5px]">
-							'TR'
-						</p>
-						<p class="text-code-comment font-mono text-[12.5px] space-x-0.5">
+				<div class="absolute border border-carbon bg-black -right-10 bottom-10 w-44 rounded-md divide-y divide-carbon">
+					<div class="lang-item" @click="switchLocale('tr')">
+						<p>'TR'</p>
+						<div>
 							<span>//</span>
 							<span>Turkish</span>
-						</p>
+						</div>
 					</div>
-					<div class="f-between px-3.5 py-2.5 t-200 hover:backdrop-brightness-150" @click="switchLocale('en')">
-						<p class="text-code-string font-mono text-[12.5px]">
-							'EN'
-						</p>
-						<p class="text-code-comment font-mono text-[12.5px] space-x-0.5">
+					<div class="lang-item" @click="switchLocale('en')">
+						<p>'EN'</p>
+						<div>
 							<span>//</span>
 							<span>English</span>
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -55,6 +51,20 @@ onClickOutside(target, () => isOpen.value = false)
 	</div>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
+.lang-item {
+	@apply flex items-center justify-between cursor-pointer;
+	@apply px-3.5 py-2.5;
+	@apply transition duration-200 ease-in-out hover:backdrop-brightness-150;
 
+	p {
+		@apply font-mono text-xxs;
+		@apply text-code-string;
+	}
+
+	div {
+		@apply font-mono text-xxs;
+		@apply text-grey-200/50 space-x-0.5;
+	}
+}
 </style>

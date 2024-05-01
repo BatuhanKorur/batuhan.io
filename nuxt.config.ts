@@ -6,7 +6,7 @@ export default defineNuxtConfig({
         '@nuxtjs/seo',
         'nuxt-gtag',
         'nuxt-icon',
-        "@nuxt/ui"
+        /*        "@nuxt/ui"*/
     ],
     css: [
         '~/assets/css/main.css'
@@ -14,11 +14,17 @@ export default defineNuxtConfig({
     app: {
         head: {
             meta: [
-                {charset: 'utf-8'},
+                {
+                    charset: 'utf-8'
+                },
                 {
                     name: 'viewport',
                     content: 'width=device-width, initial-scale=1'
                 },
+                {
+                    name: 'theme-color',
+                    content: '#0a0b0d'
+                }
             ],
             link: [
                 {
@@ -86,7 +92,10 @@ export default defineNuxtConfig({
         },
     },
     devtools: {
-        enabled: true
+        enabled: true,
+        timeline: {
+            enabled: true,
+        },
     },
     devServer: {
         https: {

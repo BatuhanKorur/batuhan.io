@@ -9,13 +9,13 @@
 					🧑‍💻
 				</h1>
 				<div class="space-y-4 md:max-w-screen-sm">
-					<p class="text">
+					<p class="c-text">
 						{{ $t('about_me.0') }}
 					</p>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('about_me.1') }}
 					</p>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('about_me.2') }}
 					</p>
 				</div>
@@ -29,13 +29,13 @@
 				<ExpCard
 					company="Reachin"
 					job="Full-stack Developer"
-					date="2023 - Present"
-					:tags="['Javascript', 'Typescript', 'Ionic', 'Vue', 'Vercel', 'Nuxt', 'AWS', 'Storyblok']"
+					:date="`2023 - ${$t('present')}`"
+					:tags="['Javascript', 'Typescript', 'Ionic', 'Vue', 'Nuxt', 'Storyblok', 'AWS', 'Vercel']"
 				>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('work_experience.reachin.desc') }}
 					</p>
-					<ul class="list">
+					<ul class="c-list">
 						<li>{{ $t('work_experience.reachin.list.0') }}</li>
 						<li>{{ $t('work_experience.reachin.list.1') }}</li>
 						<li>{{ $t('work_experience.reachin.list.2') }}</li>
@@ -46,12 +46,12 @@
 					company="Brickhunter"
 					job="Full-stack Developer"
 					date="2022 - 2024"
-					:tags="['PHP', 'Laravel', 'Livewire', 'Alpine', 'Storybook', 'SQL']"
+					:tags="['PHP', 'Laravel', 'Livewire', 'Alpine', 'Storybook', 'Vue', 'SQL']"
 				>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('work_experience.brickhunter.desc') }}
 					</p>
-					<ul class="list">
+					<ul class="c-list">
 						<li>{{ $t('work_experience.brickhunter.list.0') }}</li>
 						<li>{{ $t('work_experience.brickhunter.list.1') }}</li>
 						<li>{{ $t('work_experience.brickhunter.list.2') }}</li>
@@ -64,10 +64,10 @@
 					date="2019 - 2022"
 					:tags="['PHP', 'Laravel', 'Javascript', 'Vue', 'Quasar', 'Inertia.js']"
 				>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('work_experience.ups.desc') }}
 					</p>
-					<ul class="list">
+					<ul class="c-list">
 						<li>{{ $t('work_experience.ups.list.0') }}</li>
 						<li>{{ $t('work_experience.ups.list.1') }}</li>
 						<li>{{ $t('work_experience.ups.list.2') }}</li>
@@ -77,12 +77,12 @@
 					company="UI Bears"
 					job="Front-end Developer / UI Designer"
 					date="2018 - 2019"
-					:tags="['Javascript', 'React', 'Vue', 'PHP']"
+					:tags="['Javascript', 'React', 'Vue', 'Figma', 'UI Design']"
 				>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('work_experience.uibears.desc') }}
 					</p>
-					<ul class="list">
+					<ul class="c-list">
 						<li>{{ $t('work_experience.uibears.list.0') }}</li>
 						<li>{{ $t('work_experience.uibears.list.1') }}</li>
 					</ul>
@@ -91,12 +91,12 @@
 					company="Okami Creative"
 					job="Founder / Web Developer"
 					date="2016 - 2018"
-					:tags="['Javascript', 'Cordova', 'jQuery', 'PHP', 'Wordpress']"
+					:tags="['Javascript', 'Cordova', 'jQuery', 'Bootstrap', 'PHP', 'Wordpress']"
 				>
-					<p class="text">
+					<p class="c-text">
 						{{ $t('work_experience.okami_creative.desc') }}
 					</p>
-					<ul class="list">
+					<ul class="c-list">
 						<li>{{ $t('work_experience.okami_creative.list.0') }}</li>
 						<li>{{ $t('work_experience.okami_creative.list.1') }}</li>
 					</ul>

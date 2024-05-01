@@ -1,57 +1,58 @@
 hello: "Merhaba 👋, ben"
-about: 'About'
-portfolio: 'Portfolio'
-contact: 'Contact'
-
-ups_tracking_app:
-  desc: ACT Responsable is a french association created to identify and collect the best communications campaigns
-    around the world in order to raise awareness on social and environmental issues (solidarity, environment,
-    human rights and education). The aim was to redesign the french website by focusing on their actions which are
-    exhibitions, schools interventions or even the NG’Ad club.
-
+about: 'Hakkımda'
+portfolio: 'Portfolyo'
+contact: 'İletişim'
+experience: 'İş Deneyimi'
+present: 'Günümüz'
 
 about_me:
-  - I began coding at 13,
-    starting with Visual Basic to make simple applications and sharing them online.
-    Now, 14 years later, my passion has evolved into a career, specializing in web and mobile app development.
-  - Dedicated to lifelong learning in software development,
-    I have earned three MCSA certifications from Microsoft,
-    covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net.
-    My linguistic studies, which resulted in a bachelor’s degree from Istanbul University,
-    have equipped me to effectively communicate complex UI concepts to a broad range of users.
-  - My technical proficiency centres on JavaScript,
-    including its popular frameworks Vue and React,
-    and extends to PHP and Laravel, accompanied by a diverse toolkit of other technologies.
+  - 13 yaşında Visual Basic ile kodlamaya başladım. Hobi olarak basit uygulamalar geliştirip bunları çevrimiçi paylaştım. 14 yıl sonra, hobi olarak başladığım bu yolculuğu, Javascript ve Laravel teknolojilerine özel ilgi duyarak bir kariyere dönüştü.
+  - Yazılım geliştirmede ömür boyu öğrenmeye adanmış olarak, Microsoft'tan HTML5, CSS3, JavaScript ve ASP.Net gibi temel teknolojileri kapsayan üç MCSA sertifikası aldım. İstanbul Üniversitesi'nden lisans derecesi ile tamamladığım dilbilim çalışmaları, karmaşık UI kavramlarını geniş bir kullanıcı kitlesine etkili bir şekilde aktarmamı sağladı.
+  - Teknik uzmanlığım, JavaScript ve popüler frameworkleri olan Vue, React ve Ionic üzerine yoğunlaşmıştır. Sadece front-end alanıyla sınırlı kalmayıp, backend işlemleri için PHP ve Laravel gibi teknolojilere de hakimim. Bunun yanı sıra diğer çeşitli teknolojilerle de geniş bir yelpazede çalışmalar yürütmekteyim.
 
 work_experience:
   reachin:
-    desc: Worked on planning, designing and developing a hybrid mobile application for iOS and Android using Ionic Framework.
+    desc: iOS ve Android için Ionic Framework kullanarak çok platformlu bir mobil uygulama geliştirme sürecini yönettim. Ayrıca, iş ve müşteri odaklı operasyonları hızlandırmak amacıyla tasarlanmış bir web tabanlı uygulama da oluşturdum.
     list:
-      - Developed a mobile application that seamlessly communicates with our API Backend, utilizing a diverse
-        range of technologies, including Javascript, Typescript, Ionic, and Vue.
-      - Worked with various external APIs such as Stripe for payment processes, AW3 storage for images and Onyx
-        for data gathering.
-      - Developed landing page using Nuxt, Vue, Typescript and PostCSS. Integrated storyblok for content
-        management.
+      - iOS ve Android platformları için, API üzerinden iletişim sağlayan hibrit bir mobil uygulama oluşturdum.
+      - Güvenli ve verimli ödemeler için Stripe, sağlam depolama çözümleri için AWS ve akıcı ve güvenilir veri toplama işlemleri için Onyx dahil olmak üzere çeşitli harici API'lerle çalıştım.
+      - PHP ve Laravel’i kullanarak geliştirilen API'ler ile kullanıcı doğrulama, ürün sipariş etme, gerçek zamanlı mesajlaşma ve finansal işlemleri içeren bir cüzdan sistemini geliştirdim.
+      - Laravel, Inertia.js, Vue ve TypeScript kullanarak iş ve uygulama yönetimi operasyonlarını denetleyen bir web uygulaması tasarladım ve geliştirdim.
+  brickhunter:
+    desc: As a full-stack developer, my responsibility was to re-design the UI/UX for the customer-facing e-commerce platform and build the front end with new and modern technologies.
+    list:
+      - Laravel, Livewire ve Alpine.js ile birlikte çalışarak platformun görsel estetiğini ve kullanıcı deneyimini iyileştiren yeni bir arayüz tasarladım ve kodladım.
+      - Eskimiş Laravel kod tabanını yeniledim ve müşteri odaklı web sitesi için yeni API'ler oluşturdum.
+      - Storyblok kullanarak iş yöneticileri için yeni bir bloglama sistemi ve içerik kontrolü uyguladım, pazarlama ekibimizin üyeleri için kullanıcı dostu ve verimli bir iş akışı sağladım.
+      - Kurum içi iş yönetimi CRM'ini yeni modüller ve gelişmiş kullanıcı deneyimi ekleyerek yeniledim ve iş akışını daha kullanıcı dostu ve verimli bir hale getirdim.
+  ups:
+    desc: UPS ailesine, iş süreçlerini web ve mobil uygulamalar yardımıyla dijital ortama taşıma amacıyla katıldım.
+    list:
+      - Kullanıcı deneyimini ön planda tutarak CRM'den fatura üretimine, teslimat takibinden pazarlama metriklerinin izlenmesine kadar bir dizi iş operasyonunu içeren geniş kapsamlı bir tek sayfa uygulaması tasarladım ve geliştirdim.
+      - İşletme içi iletişimi güçlendirmek ve operasyonları daha etkili ve verimli hale getirmek için uygulama içi bir mesajlaşma sisteminin geliştirilmesine katkı sağladım.
+      - Kuryeler için, teslimat durumlarını kolaylıkla yönetebilmeleri, PDF belgeleri otomatik olarak oluşturup yazdırmaları ve teslimat yollarını izleyebilmeleri adına bir mobil uygulama tasarladım ve geliştirdim.
+  uibears:
+    desc: Hem tasarımcılar hem de geliştiriciler için yüksek kaliteli UI/UX ürünleri tasarlamak ve yayınlamak hedefiyle bir iş kuruluşu oluşturma sürecinde ortak oldum.
+    list:
+      - Atomik Tasarım Sistemi temelinde oluşturulmuş ve UI/UX tasarımcılarının şema tasarlama süreçlerini hızlandıran ve kalitesini artıran Krom Şema Tasarım Kiti adlı bir dijital ürünü tasarladım.
+      - Vue ve React için kapsamlı ön yüz kullanıcı arayüzü kütüphaneleri tasarladım ve geliştirdim.
+  okami_creative:
+    desc: İş uygulamalarını daha etkileşimli ve çekici kılmaya yoğunlaşan bir dijital ajans kurarak, e-ticaret platformlarından mobil uygulamalara kadar geniş bir proje yelpazesi üzerinde çalıştım.
+    list:
+      - Vale park şirketlerinin müşterilerini ve iş performans metriklerini basitçe izleyebilmeleri amacıyla bir web ve mobil uygulama tasarladım ve bu uygulamayı hayata geçirdim.
+      - Müşteri deneyimini yükseltmek amacıyla tabletler için lüks bir restoran menüsü oluşturdum. Bu menü, öğelerin kolayca güncellenmesine olanak tanıyarak işletmenin esnekliğini ve etkinliğini iyileştirdi.
 
+reachin_app:
+  desc: iOS ve Android için tasarlanmış, Ionic Framework ve Vue ön yüzü kullanılarak geliştirilmiş ve API arka ucu ile sunucu operasyonlarına bağlanan hibrit bir mobil uygulama.
 
+reachin_cortex:
+  desc: Laravel Framework kullanarak geliştirilen Reachin Uygulaması için REST API sunucusu, Inertia ve Vue tabanlı ön yüz motoru ile birlikte çalışıyor ve çeşitli veritabanı ve iş ile ilgili operasyonları yöneten bir web uygulaması olarak faaliyet gösteriyor
 
+brickhunter:
+  desc: Redesigning Brickhunter's e-commerce website with a new and modern UI, using Livewire, Alpine, and Vue as front-end frameworks. Building various new modules and API's with PHP and Laravel.
 
+ups:
+  desc: A single-page web application for digitising business operations. Features include CRM, invoice generation, marketing metrics, an in-app messaging system, and more.
 
-
-content:
-  about:
-    1: >
-      I began coding at 13, 
-      starting with Visual Basic to make simple applications and sharing them online. 
-      Now, 14 years later, my passion has evolved into a career, specializing in web and mobile app development.
-    2: >
-      Dedicated to lifelong learning in software development, 
-      I have earned three MCSA certifications from Microsoft, 
-      covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net. 
-      My linguistic studies, which resulted in a bachelor’s degree from Istanbul University, 
-      have equipped me to effectively communicate complex UI concepts to a broad range of users.
-    3: >
-      My technical proficiency centres on JavaScript, 
-      including its popular frameworks Vue and React, 
-      and extends to PHP and Laravel, accompanied by a diverse toolkit of other technologies.
+dispatch_app:
+  desc: A hybrid mobile application for couriers to manage their d

@@ -3,11 +3,11 @@
 </script>
 
 <template>
-	<div>
+	<div class="c-portfolio-container">
 		<PortfolioHead
 			title="Reachin App"
-			img="dummy.png"
-			desc="ups_tracking_app.desc"
+			img="reachin-app.png"
+			desc="reachin_app.desc"
 			year="2019 - 2020"
 			:category="['Web Development', 'Mobile Development']"
 			:stack="['javascript', 'ionic-icon', 'vue', 'nuxt-icon']"

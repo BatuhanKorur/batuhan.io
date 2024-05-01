@@ -3,57 +3,50 @@ about: 'About'
 portfolio: 'Portfolio'
 contact: 'Contact'
 experience: 'Work Experience'
+present: 'Present'
 
 about_me:
-  - I began coding at 13,
-    starting with Visual Basic to make simple applications and sharing them online.
-    Now, 14 years later, my passion has evolved into a career, specializing in web and mobile app development.
-  - Dedicated to lifelong learning in software development,
-    I have earned three MCSA certifications from Microsoft,
-    covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net.
-    My linguistic studies, which resulted in a bachelor’s degree from Istanbul University,
-    have equipped me to effectively communicate complex UI concepts to a broad range of users.
-  - My technical proficiency centres on JavaScript,
-    including its popular frameworks Vue and React,
-    and extends to PHP and Laravel, accompanied by a diverse toolkit of other technologies.
+  - I began coding at the age of 13 with Visual Basic. I crafted simple applications as a hobby and shared them online. After 14 years, what started as a hobby has flourished into a career with a keen specialization in front-end engineering with Javascript and Laravel.
+  - Dedicated to lifelong learning in software development, I have earned three MCSA certifications from Microsoft, covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net. My linguistic studies, which resulted in a bachelor’s degree from Istanbul University, have equipped me to effectively communicate complex UI concepts to a broad range of users.
+  - My technical proficiency centres on JavaScript,  including its popular frameworks Vue, React and Ionic, further extending to PHP and Laravel for backend operations, accompanied by a diverse toolkit of other technologies.
 
 work_experience:
   reachin:
-    desc: Led the development of a cross-platform mobile application for iOS and Android utilizing the Ionic Framework. Additionally, created a web-based tool designed to streamline business and customer-centric operations.
+    desc: I led the development of a cross-platform mobile application for iOS and Android utilizing the Ionic Framework. Additionally, I created a web-based application designed to streamline business and customer-centric operations.
     list:
       - Developed a hybrid mobile application for iOS and Android that communicates with an API backend.
       - Engaged with diverse external APIs, including Stripe for secure payments, AWS for storage solutions, and Onyx for streamlined data collection processes.
       - Designed and developed APIs leveraging PHP and Laravel to manage essential functionalities like user authentication, product ordering, real-time messaging, and financial operations within an embedded wallet system.
       - Engineered a web application utilizing Laravel, Inertia.js, Vue, and Typescript, dedicated to overseeing business operations efficiently.  Built features like automated email generation and delivery, comprehensive marketing analytics tools, and seamless financial operations management."
   brickhunter:
-    desc: Full-stack developer responsible for redesigning and developing UI/UX for the customer-facing e-commerce platform.
+    desc: As a full-stack developer, my responsibility was to re-design the UI/UX for the customer-facing e-commerce platform and build the front end with new and modern technologies.
     list:
-      - Designed and developed a more modern UI to enhance the platform's visual appeal and user experience, utilizing Laravel with Livewire and Alpine.js
+      - Designed and developed a new UI to enhance the platform's visual appeal and user experience, utilizing Laravel with Livewire and Alpine.js
       - Revamped the outdated Laravel codebase and built new APIs for the customer-facing website.
-      - Implemented a new blogging system and content control for business managers using Storyblok, ensuring a user-friendly and efficient experience for our technical team members.
+      - Implemented a new blogging system and content control for business managers using Storyblok, ensuring a user-friendly and efficient workflow for our marketing team members.
       - Enhanced the internal business management CRM by building new modules and improved user experience to optimize workflow efficiency.
   ups:
     desc: Joined the UPS family to work on transforming business operations to a digital workflow using web and mobile apps.
     list:
-      - Designed and developed an extensive single-page application with a strong emphasis on user experience. Handling various business operations ranging from CRM, invoice generation, delivery tracking, and marketing metrics capture.
+      - Designed and developed a comprehensive single-page application with a strong emphasis on user experience. Handling various business operations ranging from CRM, invoice generation, delivery tracking, and marketing metrics capture.
       - Contributed to developing an in-app messaging system, enhancing internal communication within the business for more effective and efficient operations.
-      - Developed a mobile application for couriers to easily manage their delivery status, automatically generate and print PDF documents, and handle delivery trajectories.
+      - Developed a mobile application for couriers to easily manage their delivery status, automatically generate and print PDF documents, and handle  delivery trajectories.
   uibears:
     desc: Co-created a business with the goal of creating and publishing high-quality UI/UX products for both designers and developers.
     list:
-      - Developed a digital product named Krom Wireframe Kit based on Atomic Design System to help UI/UX designer creating faster and better wireframe processes.
+      - Developed a digital product named Krom Wireframe Kit, a powerful tool based on the Atomic Design System, designed to significantly enhance the speed and quality of wireframe processes for UI/UX designers.
       - Developed detailed front-end UI Libraries for both Vue and React.
   okami_creative:
-    desc: Started a digital agency business focusing on creating interactive and engaging business applications. Worked on a diverse range of projects, including e-commerce platforms, landing pages, and mobile applications.
+    desc: Formed a digital agency business focusing on creating interactive and engaging business applications. Worked on a diverse range of projects, including e-commerce platforms, landing pages, and mobile applications.
     list:
-      - Initiated and developed on creating a web application for valet parking business to easily track customers and business metrics.
+      - Created and developed a web and mobile application for valet parking businesses to easily track customers and business metrics.
       - Created a digitized restaurant menu for tablets, elevating the customer experience to a more luxurious level while also providing an easily managed process to update menu items, enhancing the business's agility and efficiency.
 
 reachin_app:
   desc: A hybrid mobile application built for iOS and Android, using Ionic Framework with Vue as the front end and communicating with an API backend for server operations.
 
 reachin_cortex:
-  desc: REST API server for Reachin App using PHP with Laravel Framework. Using Inertia.js and Vue as a front-end engine, it acts as a business management platform to view and manage various database and business related operations.
+  desc: REST API server for Reachin App using Laravel Framework Using Inertia and Vue as a front-end engine, it also acts as a web application to manage various database and business-related operations.
 
 brickhunter:
   desc: Redesigning Brickhunter's e-commerce website with a new and modern UI, using Livewire, Alpine, and Vue as front-end frameworks. Building various new modules and API's with PHP and Laravel.

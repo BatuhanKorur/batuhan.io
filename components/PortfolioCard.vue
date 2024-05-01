@@ -35,7 +35,7 @@ defineProps({
 			<NuxtLink :to="href" class="text-light font-mono font-semibold text-md tracking-[-0.1px] pb-1">
 				{{ title }}
 			</NuxtLink>
-			<p class="text">
+			<p class="c-text">
 				{{ $t(desc) }}
 			</p>
 		</div>
