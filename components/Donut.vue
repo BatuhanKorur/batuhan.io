@@ -177,7 +177,7 @@
 
 <style scoped lang="postcss">
 .donut {
-	animation: spin 6s linear infinite;
+	animation: spin 60s linear infinite;
 
 	@apply absolute;
 	@apply -bottom-12 -right-28;
@@ -196,7 +196,7 @@
 	}
 	50% {
 		transform: rotate(180deg);
-		scale: calc(1.3);
+		scale: calc(1.25);
 	}
 	100% {
 		transform: rotate(360deg);

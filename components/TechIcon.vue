@@ -20,8 +20,6 @@ const tip = computed(() => {
 
 <template>
 	<div class="inline-flex">
-		<UTooltip :text="tip">
-			<Icon :name="`logos:${icon}`" :class="css" />
-		</UTooltip>
+		<Icon :name="`logos:${icon}`" :class="css" />
 	</div>
 </template>
