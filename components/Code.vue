@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-	<div class="flex items-center mb-1.5 font-mono last:mb-3 h-7 first:mt-3 hover:backdrop-brightness-110">
+	<div class="flex h-[24px] items-center mb-1 font-mono last:mb-3 first:mt-3 hover:backdrop-brightness-110">
 		<label class="line-number pl-4 w-14">{{ n }}</label>
 		<div class="text-[14px]">
 			<div v-if="$slots.comment" class="comment">

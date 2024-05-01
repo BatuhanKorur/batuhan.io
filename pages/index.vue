@@ -2,13 +2,13 @@
 
 <template>
 	<div class="grow flex flex-col justify-between overflow-y-hidden">
-		<div class="h-[30vh] w-full content-end space-y-3 md:max-w-2xl md:mx-auto lg:max-w-screen-lg">
-			<div class="px-8">
+		<div class="h-[25vh] md:h-[40vh] w-full content-end space-y-3 md:max-w-2xl md:mx-auto lg:max-w-screen-lg">
+			<div class="px-6">
 				<p class="text-light font-[425] text-[20px] md:text-[24px] lg:pb-2">
 					{{ $t('hello') }}
 				</p>
 				<p
-					class="text-light font-[580] text-[44px] md:text-[58px] lg:text-[64px] lg:font-[610] tracking-[1px] leading-10"
+					class="text-light font-[580] text-[40px] md:text-[52px] lg:text-[64px] lg:font-[610] tracking-[1px] leading-10"
 				>
 					Batuhan Korur
 				</p>

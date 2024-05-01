@@ -2,6 +2,7 @@ hello: "Hello 👋, I'm"
 about: 'About'
 portfolio: 'Portfolio'
 contact: 'Contact'
+experience: 'Work Experience'
 
 about_me:
   - I began coding at 13,
@@ -48,9 +49,17 @@ work_experience:
       - Initiated and developed on creating a web application for valet parking business to easily track customers and business metrics.
       - Created a digitized restaurant menu for tablets, elevating the customer experience to a more luxurious level while also providing an easily managed process to update menu items, enhancing the business's agility and efficiency.
 
+reachin_app:
+  desc: A hybrid mobile application built for iOS and Android, using Ionic Framework with Vue as the front end and communicating with an API backend for server operations.
 
-ups_tracking_app:
-  desc: ACT Responsable is a french association created to identify and collect the best communications campaigns
-    around the world in order to raise awareness on social and environmental issues (solidarity, environment,
-    human rights and education). The aim was to redesign the french website by focusing on their actions which are
-    exhibitions, schools interventions or even the NG’Ad club.
+reachin_cortex:
+  desc: REST API server for Reachin App using PHP with Laravel Framework. Using Inertia.js and Vue as a front-end engine, it acts as a business management platform to view and manage various database and business related operations.
+
+brickhunter:
+  desc: Redesigning Brickhunter's e-commerce website with a new and modern UI, using Livewire, Alpine, and Vue as front-end frameworks. Building various new modules and API's with PHP and Laravel.
+
+ups:
+  desc: A single-page web application for digitising business operations. Features include CRM, invoice generation, marketing metrics, an in-app messaging system, and more.
+
+dispatch_app:
+  desc: A hybrid mobile application for couriers to manage their delivery processes. The application was built with Javascript, Vue, and Tailwindcss, using Cordova as the app engine, which works seamlessly with Android OS.

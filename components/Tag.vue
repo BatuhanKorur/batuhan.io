@@ -8,8 +8,8 @@ defineProps({
 </script>
 
 <template>
-	<div class="f-center px-3 py-1.5 bg-blue-900/10 rounded-b rounded-tl rounded-tr-md">
-		<p class="text-blue-200 font-mono text-[10px] tracking-[-0.1px] lg:text-[11.5px] lg:font-[520]">
+	<div class="f-center px-3.5 py-2 bg-blue-800/10 rounded">
+		<p class="text-blue-100/90 font-mono text-[10.5px] tracking-[0.1px] font-[425] lg:text-[11.5px] lg:font-[520]">
 			{{ label }}
 		</p>
 	</div>

@@ -4,14 +4,13 @@ import portfolio from '@/config/portfolio'
 
 <template>
 	<div>
-		<p class="text-light font-mono px-3 pt-10 pb-8">
-			Portfolio
-		</p>
+		<Header>
+			{{ $t('portfolio') }}
+		</Header>
 		<div class="grid grid-cols-1 lg:grid-cols-2">
 			<PortfolioCard
 				v-for="item in portfolio"
 				:key="item.href"
-				class="first:border-t border-b border-carbon lg:border"
 				:title="item.title"
 				:img="item.img"
 				:desc="item.desc"
@@ -21,7 +20,3 @@ import portfolio from '@/config/portfolio'
 		</div>
 	</div>
 </template>
-
-<style scoped>
-
-</style>

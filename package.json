@@ -11,14 +11,15 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.6.0",
-    "@unhead/vue": "^1.9.7",
+    "@nuxt/ui": "^2.15.2",
+    "@unhead/vue": "^1.9.8",
     "@vueuse/core": "^10.9.0",
     "nuxt": "^3.11.2",
     "vue": "^3.4.26",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.16.0",
+    "@antfu/eslint-config": "^2.16.1",
     "@nuxtjs/i18n": "^8.3.1",
     "@nuxtjs/seo": "^2.0.0-rc.10",
     "autoprefixer": "^10.4.19",

@@ -24,7 +24,7 @@ const value = computed({
 		<div class="pl-4 md:pl-5">
 			<NuxtLink
 				to="/"
-				class="font-mono text-light font-bold text-[15px] md:text-[16px] lg:text-[17px] grow tracking-[-0.1px]"
+				class="font-mono text-light font-[580] text-[15px] md:text-[16px] lg:text-[17px] grow tracking-[-0.1px]"
 				@click="value = false"
 			>
 				batuhan korur
@@ -49,12 +49,12 @@ const value = computed({
 			<Icon
 				v-if="!value"
 				name="uim:apps"
-				class="size-[24px] text-light opacity-75 t-200 hover:opacity-100 cursor-pointer"
+				class="size-5 text-light opacity-70 t-200 hover:opacity-100 cursor-pointer"
 			/>
 			<Icon
 				v-else
 				name="line-md:menu-to-close-transition"
-				class="size-[20px] text-light opacity-75 t-200 hover:opacity-100 cursor-pointer"
+				class="size-5 text-light opacity-70 t-200 hover:opacity-100 cursor-pointer"
 			/>
 		</div>
 	</div>

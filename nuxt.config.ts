@@ -6,6 +6,7 @@ export default defineNuxtConfig({
         '@nuxtjs/seo',
         'nuxt-gtag',
         'nuxt-icon',
+        "@nuxt/ui"
     ],
     css: [
         '~/assets/css/main.css'

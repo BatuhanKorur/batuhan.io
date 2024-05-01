@@ -14,18 +14,17 @@ defineProps({
 <template>
 	<div class="grid grid-cols-10">
 		<div class="col-span-4">
-			<p class="font-mono text-light/50 text-sm md:text-[14.5px] font-[550]">
+			<p class="font-mono font-[525] text-blue-200 uppercase text-xs md:text-sm lg:text-base">
 				{{ title }}
 			</p>
 		</div>
 		<div class="col-span-6">
-			<div class="text-light text-sm font-[440] md:text-[14.5px]" :class="icons ? 'space-x-2' : 'space-y-1'">
+			<div
+				class="text-light text-sm font-[425] lg:font-[475] lg:text-base"
+				:class="icons ? 'space-x-2' : 'space-y-0.5'"
+			>
 				<slot />
 			</div>
 		</div>
 	</div>
 </template>
-
-<style scoped>
-
-</style>

@@ -20,26 +20,26 @@ defineProps({
 </script>
 
 <template>
-	<div class="border-t border-carbon">
-		<div class="p-4 lg:px-6 lg:pt-6">
-			<div class="flex items-end justify-between">
-				<p class="text-light text-[15px] font-medium leading-4">
+	<div class="p-5 lg:p-6 border-t border-carbon lg:first:border-t-0">
+		<div>
+			<div class="flex items-center justify-between">
+				<p class="text-light text-md font-medium">
 					{{ company }}
 				</p>
-				<p class="text-grey-300 text-[14px] font-[425] leading-4 tracking-[-0.1px]">
+				<p class="text-grey-200 text-base tracking-[-0.1px]">
 					{{ date }}
 				</p>
 			</div>
 			<div class="pt-0.5">
-				<p class="text-accent/90 brightness-110 font-mono font-[550] text-[13px] tracking-[-0.2px]">
+				<p class="text-accent brightness-110 font-mono font-[500] text-sm">
 					{{ job }}
 				</p>
 			</div>
 		</div>
-		<div class="px-4 content lg:px-6">
+		<div class="py-4">
 			<slot />
 		</div>
-		<div class="px-4 py-3 mb-3 flex flex-wrap gap-x-2 gap-y-1.5 lg:px-6 lg:py-4">
+		<div class="flex flex-wrap gap-2">
 			<Tag
 				v-for="(tag, i) in tags"
 				:key="i"

@@ -10,17 +10,22 @@
     @apply transition duration-200 ease-in-out;
 }
 
+.h2 {
+    @apply text-blue-100 font-mono uppercase font-[555] mb-1.5;
+    @apply md:text-lg lg:text-xl;
+}
+
 .content {
     p {
-        @apply text-grey-100 text-[14.5px] leading-[1.4em] tracking-[-0.1px] text-pretty;
+        @apply text-grey-100 text-[14.25px] font-[350] leading-[1.5em] tracking-[-0.05px] text-pretty;
     }
 
-    ul {
-        @apply list-inside list-disc;
-    }
 
-    li {
-        @apply first:pt-2 pb-2;
-        @apply text-grey-200 font-[325] text-[13.75px] leading-[1.39em] text-pretty break-words;
+}
+
+.portfolio {
+    &_container {
+        @apply px-4 pt-5;
+        @apply lg:max-w-screen-lg lg:mx-auto;
     }
 }
