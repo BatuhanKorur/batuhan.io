@@ -1,20 +1,34 @@
 <script setup lang="ts">
+import portfolio from '@/config/portfolio'
 
+const work = ref(portfolio.reachin_cortex)
 </script>
 
 <template>
-	<div class="c-portfolio-container">
-		<PortfolioHead
-			title="Reachin Cortex"
-			img="reachin-cortex.png"
-			desc="reachin_cortex.desc"
-			year="2022 - 2023"
-			:category="['Web Development', 'UI/UX Design']"
-			:stack="['javascript', 'vue', 'laravel', 'storyblok-icon', 'tailwindcss-icon']"
-		/>
-	</div>
+	<PortfolioPage :image="work.img" :title="work.title">
+		<template #desc>
+			{{ $t(work.desc) }}
+		</template>
+		<template #category>
+			<p>Web App Development</p>
+			<p>Backend Development</p>
+		</template>
+		<template #year>
+			2023 - 2024
+		</template>
+		<template #stack>
+			<TechIcon
+				v-for="(item, i) in work.icons"
+				:key="i"
+				:icon="item"
+			/>
+		</template>
+		<div class="space-y-4">
+			<Description title="Database Design" />
+			<Description title="API Backend" />
+			<Description title="CRM Web Application" />
+			<Description title="Marketing Module" />
+			<Description title="Support Support" />
+		</div>
+	</PortfolioPage>
 </template>
-
-<style scoped>
-
-</style>

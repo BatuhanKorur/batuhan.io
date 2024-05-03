@@ -31,12 +31,12 @@ defineProps({
 				</p>
 			</div>
 			<div class="pt-0.5">
-				<p class="text-accent brightness-110 font-mono font-[500] text-sm">
+				<p class="text-accent brightness-110 font-mono font-[500] text-sm tracking-[-0.1px]">
 					{{ job }}
 				</p>
 			</div>
 		</div>
-		<div class="py-4">
+		<div class="pt-2 pb-4">
 			<slot />
 		</div>
 		<div class="flex flex-wrap gap-2">
@@ -48,7 +48,3 @@ defineProps({
 		</div>
 	</div>
 </template>
-
-<style scoped>
-
-</style>

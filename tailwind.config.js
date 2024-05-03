@@ -17,7 +17,7 @@ export default {
 				lineHeight: '1.4em',
 			}],
 			'xs': ['13px', {
-				lineHeight: '1.4em',
+				lineHeight: '1.35em',
 			}],
 			'sm': ['14px', {
 				lineHeight: '1.4em',
@@ -45,11 +45,11 @@ export default {
 				accent: '#73a2ff',
 				carbon: '#2a2b33',
 				grey: {
-					500: '#37394a',
-					400: '#69697a',
-					300: '#b3b3c4',
-					200: '#cccfde',
-					100: '#e1e4f0',
+					500: '#626373',
+					400: '#9a9aa6',
+					300: '#b6b6bf',
+					200: '#ced0d9',
+					100: '#e6e8f2',
 				},
 				code: {
 					keyword: '#F97583',

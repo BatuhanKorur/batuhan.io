@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import {onClickOutside} from '@vueuse/core'
+import { onClickOutside } from '@vueuse/core'
 
-const {locale, setLocale} = useI18n()
+const { locale, setLocale } = useI18n()
 
 const target = ref(null)
 const isOpen = ref(false)
 
-function handleMenu(val: boolean) {
+function handleMenu(val) {
 	isOpen.value = val
 }
 
-function switchLocale(lang: string) {
-	if (locale.value !== lang) {
+function switchLocale(lang) {
+	if (locale.value !== lang)
 		setLocale(lang)
-	}
 	handleMenu(false)
 }
 
@@ -30,7 +29,7 @@ onClickOutside(target, () => isOpen.value = false)
 		</p>
 		<Transition>
 			<div v-if="isOpen" ref="target">
-				<div class="absolute border border-carbon bg-black -right-10 bottom-10 w-44 rounded-md divide-y divide-carbon">
+				<div class="absolute border border-carbon bg-black left-3 bottom-10 w-48 rounded divide-y divide-carbon">
 					<div class="lang-item" @click="switchLocale('tr')">
 						<p>'TR'</p>
 						<div>
@@ -54,17 +53,17 @@ onClickOutside(target, () => isOpen.value = false)
 <style scoped lang="postcss">
 .lang-item {
 	@apply flex items-center justify-between cursor-pointer;
-	@apply px-3.5 py-2.5;
 	@apply transition duration-200 ease-in-out hover:backdrop-brightness-150;
+	@apply px-4 py-3.5;
 
 	p {
-		@apply font-mono text-xxs;
+		@apply font-mono text-xxs md:text-xs;
 		@apply text-code-string;
 	}
 
 	div {
-		@apply font-mono text-xxs;
-		@apply text-grey-200/50 space-x-0.5;
+		@apply font-mono text-xxs md:text-xs font-[350] md:font-[450];
+		@apply text-light/40 space-x-0.5;
 	}
 }
 </style>

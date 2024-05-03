@@ -5,9 +5,9 @@ import socials from '@/config/socials'
 <template>
 	<div class="flex flex-col">
 		<Header>
-			Contact
+			{{ $t('contact') }}
 		</Header>
-		<div class="bg-[#101218]">
+		<div class="bg-[#101218] lg:border-b border-carbon">
 			<Code n="1">
 				<template #comment>
 					Contact via email
@@ -16,10 +16,9 @@ import socials from '@/config/socials'
 			<Code n="2">
 				<template #variable>email</template>
 				<template #string>
-					<div class="code_link group">
-						<NuxtLink to="mailto:mail@batuhan.io">mail@batuhan.io</NuxtLink>
-						<div class="line group-hover:opacity-100" />
-					</div>
+					<CodeLink href="mailto:mail@batuhan.io">
+						mail@batuhan.io
+					</CodeLink>
 				</template>
 			</Code>
 			<Code n="3" />
@@ -42,10 +41,9 @@ import socials from '@/config/socials'
 			<Code n="8">
 				<template #prop>url</template>
 				<template #string>
-					<div class="code_link group">
-						<NuxtLink :to="socials.github.url" target="_blank">{{ socials.github.url_pretty }}</NuxtLink>
-						<div class="line group-hover:opacity-100" />
-					</div>
+					<CodeLink :href="socials.github.url" blank>
+						{{ socials.github.url_pretty }}
+					</CodeLink>
 				</template>
 			</Code>
 			<Code n="9">
@@ -61,10 +59,9 @@ import socials from '@/config/socials'
 			<Code n="12">
 				<template #prop>url</template>
 				<template #string>
-					<div class="code_link group">
-						<NuxtLink :to="socials.linkedin.url" target="_blank">{{ socials.linkedin.url_pretty }}</NuxtLink>
-						<div class="line group-hover:opacity-100" />
-					</div>
+					<CodeLink :href="socials.linkedin.url" blank>
+						{{ socials.linkedin.url_pretty }}
+					</CodeLink>
 				</template>
 			</Code>
 			<Code n="13">
@@ -80,10 +77,9 @@ import socials from '@/config/socials'
 			<Code n="16">
 				<template #prop>url</template>
 				<template #string>
-					<div class="code_link group">
-						<NuxtLink :to="socials.instagram.url" target="_blank">{{ socials.instagram.url_pretty }}</NuxtLink>
-						<div class="line group-hover:opacity-100" />
-					</div>
+					<CodeLink :href="socials.instagram.url" blank>
+						{{ socials.instagram.url_pretty }}
+					</CodeLink>
 				</template>
 			</Code>
 			<Code n="13">

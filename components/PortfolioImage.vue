@@ -4,6 +4,10 @@ defineProps({
 		type: String,
 		required: true,
 	},
+	css: {
+		type: String,
+		default: 'h-[250px] md:h-[400px]',
+	},
 })
 </script>
 
@@ -16,7 +20,6 @@ defineProps({
 			quality="90"
 			fit="cover"
 			loading="lazy"
-			height="320px md:440px lg:560px"
 		/>
 	</div>
 </template>

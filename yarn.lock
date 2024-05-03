@@ -2257,7 +2257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@popperjs/core@npm:^2.11.8":
+"@popperjs/core@npm:^2.11.8, @popperjs/core@npm:^2.9.2":
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
   checksum: 10c0/4681e682abc006d25eb380d0cf3efc7557043f53b6aea7a5057d0d1e7df849a00e281cd8ea79c902a35a414d7919621fc2ba293ecec05f413598e0b23d5a1e63
@@ -4531,6 +4531,7 @@ __metadata:
     tailwindcss: "npm:^3.4.3"
     vue: "npm:^3.4.26"
     vue-router: "npm:^4.3.2"
+    vue3-popper: "npm:^1.5.0"
   languageName: unknown
   linkType: soft
 
@@ -5493,6 +5494,13 @@ __metadata:
     drizzle-orm:
       optional: true
   checksum: 10c0/5b24852b5955184a94e78a426e3bc444d561cd4d65e75fd64c1dcc8c4614628ed0841a52a7bfb0fea37323a966b196af15279452966fdf8ffeaba53e220bc959
+  languageName: node
+  linkType: hard
+
+"debounce@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "debounce@npm:1.2.1"
+  checksum: 10c0/6c9320aa0973fc42050814621a7a8a78146c1975799b5b3cc1becf1f77ba9a5aa583987884230da0842a03f385def452fad5d60db97c3d1c8b824e38a8edf500
   languageName: node
   linkType: hard
 
@@ -13086,6 +13094,18 @@ __metadata:
   peerDependencies:
     vue: ^3.2.0
   checksum: 10c0/0ce794345a9ae9d4a12bf808481b91e53603d80f134cff2d0a4518f1ea8499026b803f843c1a5a073669846626bbe23ab4df8d8a5afabd422aabbdbb7804a506
+  languageName: node
+  linkType: hard
+
+"vue3-popper@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "vue3-popper@npm:1.5.0"
+  dependencies:
+    "@popperjs/core": "npm:^2.9.2"
+    debounce: "npm:^1.2.1"
+  peerDependencies:
+    vue: ^3.2.20
+  checksum: 10c0/7b232287749c815b1bb2054a337dcb98a6a233abbba4460009373b9961a881e167f41fc77c7495f7d370326260f21189b4d7c7705697fe163538e00128a967d2
   languageName: node
   linkType: hard
 

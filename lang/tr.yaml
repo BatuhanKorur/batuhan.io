@@ -4,6 +4,8 @@ portfolio: 'Portfolyo'
 contact: 'İletişim'
 experience: 'İş Deneyimi'
 present: 'Günümüz'
+download_resume: 'CV Indir'
+view_project: 'Görüntüle'
 
 about_me:
   - 13 yaşında Visual Basic ile kodlamaya başladım. Hobi olarak basit uygulamalar geliştirip bunları çevrimiçi paylaştım. 14 yıl sonra, hobi olarak başladığım bu yolculuğu, Javascript ve Laravel teknolojilerine özel ilgi duyarak bir kariyere dönüştü.

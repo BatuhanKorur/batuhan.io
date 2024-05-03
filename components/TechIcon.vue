@@ -1,12 +1,10 @@
 <script setup lang="ts">
+import Popper from 'vue3-popper'
+
 const props = defineProps({
 	icon: {
 		type: String,
 		required: true,
-	},
-	css: {
-		type: String,
-		default: 'size-4 lg:size-5',
 	},
 })
 
@@ -20,6 +18,17 @@ const tip = computed(() => {
 
 <template>
 	<div class="inline-flex">
-		<Icon :name="`logos:${icon}`" :class="css" />
+		<Popper
+			hover
+			placement="top"
+			offset-distance="8"
+		>
+			<template #content>
+				<span class="text-sm text-light/75">{{ tip }}</span>
+			</template>
+			<div class="f-center size-[20px]">
+				<Icon :name="`logos:${icon}`" class="min-h-[18px] w-full" />
+			</div>
+		</Popper>
 	</div>
 </template>

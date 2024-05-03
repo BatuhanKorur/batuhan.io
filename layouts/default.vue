@@ -10,7 +10,7 @@ const menuOpen = ref(false)
 		<div class="container">
 			<Navbar v-model="menuOpen" class="z-50" />
 			<div class="grow flex flex-col h-full">
-				<Transition name="menu" mode="out-in">
+				<Transition name="page" mode="out-in">
 					<div v-if="menuOpen" class="grow">
 						<NuxtLink
 							v-for="link in routes"

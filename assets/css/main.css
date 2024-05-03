@@ -1,6 +1,4 @@
 @import './utils.pcss';
-@import './transitions.pcss';
-@import './custom.pcss';
 
 @tailwind base;
 @tailwind components;
@@ -20,8 +18,16 @@
     }
 }
 
-
 html, body {
     @apply font-sans antialiased bg-black;
 }
 
+:root {
+    --popper-theme-background-color: theme('colors.black');
+    --popper-theme-text-color: theme('colors.light');
+    --popper-theme-border-width: 1px;
+    --popper-theme-border-style: solid;
+    --popper-theme-border-color: theme('colors.carbon');
+    --popper-theme-border-radius: 4px;
+    --popper-theme-padding: 8px 16px;
+}

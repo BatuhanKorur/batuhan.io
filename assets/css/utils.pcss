@@ -10,10 +10,13 @@
     @apply transition duration-200 ease-in-out;
 }
 
-.code_link {
-    @apply flex flex-col;
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.2s;
+}
 
-    .line {
-        @apply bg-code-string h-px w-full t-200 opacity-50;
-    }
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
 }
