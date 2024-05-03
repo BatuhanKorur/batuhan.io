@@ -32,19 +32,19 @@ defineProps({
 				class="grid grid-cols-1 divide-carbon divide-y md:grid-cols-3 md:divide-x md:divide-y-0 border-t border-carbon border-b md:border-b-0"
 			>
 				<div class="project-detail">
-					<h2>Category</h2>
+					<h2>{{ $t('category') }}</h2>
 					<div>
 						<slot name="category" />
 					</div>
 				</div>
 				<div class="project-detail">
-					<h2>Year</h2>
+					<h2>{{ $t('year') }}</h2>
 					<div>
 						<slot name="year" />
 					</div>
 				</div>
 				<div class="project-detail">
-					<h2>Tech Stack</h2>
+					<h2>{{ $t('tech_stack') }}</h2>
 					<div class="space-x-3">
 						<slot name="stack" />
 					</div>
@@ -62,12 +62,12 @@ defineProps({
 	@apply p-4 md:p-5;
 
 	h2 {
-		@apply font-mono text-blue-200/75 uppercase font-semibold tracking-[0.3px];
+		@apply font-mono text-blue-200/90 uppercase font-semibold tracking-[0.3px];
 		@apply text-xs md:text-sm mb-2;
 	}
 
 	div {
-		@apply text-grey-300 text-xs space-y-1;
+		@apply text-grey-100 text-xs space-y-1;
 		@apply md:text-sm lg:text-base lg:font-[450];
 	}
 }

@@ -6,6 +6,11 @@ experience: 'İş Deneyimi'
 present: 'Günümüz'
 download_resume: 'CV Indir'
 view_project: 'Görüntüle'
+contact_via_email: 'Eposta gönderin'
+link_via_socials: 'Sosyal medya linklerim'
+category: 'Kategori'
+year: 'Yıl'
+tech_stack: 'Teknoloji'
 
 about_me:
   - 13 yaşında Visual Basic ile kodlamaya başladım. Hobi olarak basit uygulamalar geliştirip bunları çevrimiçi paylaştım. 14 yıl sonra, hobi olarak başladığım bu yolculuğu, Javascript ve Laravel teknolojilerine özel ilgi duyarak bir kariyere dönüştü.

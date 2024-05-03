@@ -6,6 +6,11 @@ experience: 'Work Experience'
 present: 'Present'
 download_resume: 'Download Resume'
 view_project: 'View Project'
+contact_via_email: 'Contact via email'
+link_via_socials: 'Link through social media'
+category: 'Category'
+year: 'Year'
+tech_stack: 'Tech Stack'
 
 about_me:
   - I began coding at the age of 13 with Visual Basic. I crafted simple applications as a hobby and shared them online. After 14 years, what started as a hobby has flourished into a career with a keen specialization in front-end engineering with Javascript and Laravel.

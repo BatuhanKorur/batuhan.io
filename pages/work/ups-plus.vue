@@ -7,7 +7,7 @@ const work = ref(portfolio.ups)
 <template>
 	<PortfolioPage :image="work.img" :title="work.title">
 		<template #desc>
-			UPS Plus
+			{{ $t(work.desc) }}
 		</template>
 		<template #category>
 			<p>Web Development</p>

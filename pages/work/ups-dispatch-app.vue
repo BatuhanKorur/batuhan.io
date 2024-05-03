@@ -6,7 +6,9 @@ const work = ref(portfolio.dispatch_app)
 
 <template>
 	<PortfolioPage :image="work.img" :title="work.title">
-		<template #desc />
+		<template #desc>
+			{{ $t(work.desc) }}
+		</template>
 		<template #category>
 			<p>Mobile Development</p>
 		</template>

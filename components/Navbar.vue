@@ -8,6 +8,7 @@ const props = defineProps({
 	},
 })
 const emits = defineEmits(['update:modelValue'])
+const localePath = useLocalePath()
 const router = useRoute()
 const value = computed({
 	get() {
@@ -23,7 +24,7 @@ const value = computed({
 	<div class="f-between w-full border-b border-carbon h-[52px] md:h-[60px] lg:justify-start">
 		<div class="pl-4 md:pl-5">
 			<NuxtLink
-				to="/"
+				:to="localePath('/')"
 				class="font-mono text-light font-[550] text-base md:text-md lg:text-[17px] grow tracking-[-0.1px]"
 				@click="value = false"
 			>
@@ -34,12 +35,12 @@ const value = computed({
 			<NuxtLink
 				v-for="route in routes"
 				:key="route.label"
-				:to="route.href"
+				:to="localePath(route.href)"
 				class="border-l border-carbon px-8 f-center h-full last:border-r"
 			>
 				<p
-					class="font-mono text-xs font-[600] lowercase"
-					:class="router.fullPath.startsWith(route.href) ? 'opacity-100 text-blue-300' : 'opacity-60 text-light'"
+					class="font-mono text-xs font-medium lowercase"
+					:class="router.fullPath.startsWith(route.href) ? 'text-accent' : 'text-grey-400'"
 				>
 					{{ $t(route.label) }}
 				</p>

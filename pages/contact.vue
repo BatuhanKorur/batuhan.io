@@ -10,7 +10,7 @@ import socials from '@/config/socials'
 		<div class="bg-[#101218] lg:border-b border-carbon">
 			<Code n="1">
 				<template #comment>
-					Contact via email
+					{{ $t('contact_via_email') }}
 				</template>
 			</Code>
 			<Code n="2">
@@ -24,7 +24,7 @@ import socials from '@/config/socials'
 			<Code n="3" />
 			<Code n="4">
 				<template #comment>
-					Link through social media
+					{{ $t('link_via_socials') }}
 				</template>
 			</Code>
 			<Code n="5">

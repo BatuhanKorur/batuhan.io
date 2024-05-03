@@ -16,6 +16,7 @@ export default antfu({
 		globals: {
 			useI18n: 'readonly',
 			useRoute: 'readonly',
+			useLocalePath: 'readonly',
 		},
 	},
 	rules: {

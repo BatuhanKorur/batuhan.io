@@ -8,17 +8,38 @@ defineProps({
 </script>
 
 <template>
-	<div>
-		<div class="flex items-center">
-			<p class="text-grey-500 font-mono text-[12px] mb-px pr-1 font-semibold lg:text-sm lg:font-semibold">
+	<div class="pb-1">
+		<div class="title">
+			<p class="text-grey-400 pr-1 font-semibold">
 				//
 			</p>
-			<h3 class="font-mono text-light text-sm font-[450] tracking-[-0.15px] lg:text-base lg:font-semibold">
-				<span>{{ title }}</span>
+			<h3 class="text-light tracking-[-0.15px]">
+				{{ title }}
 			</h3>
 		</div>
-		<p class="text-grey-300 text-xs leading-[1.45em] font-[350] lg:text-base lg:font-[410]">
+		<p class="desc">
 			<slot />
 		</p>
 	</div>
 </template>
+
+<style scoped lang="postcss">
+.title {
+	@apply flex items-center font-mono;
+
+	p {
+		@apply text-[13.5px] md:text-[14.5px] lg:text-[16.5px];
+	}
+
+	h3 {
+		@apply text-[14.5px] md:text-[15.5px] lg:text-[17.5px];
+		@apply font-[450] md:font-[500] lg:font-[600];
+	}
+}
+
+.desc {
+	@apply text-grey-300 leading-[1.45em] tracking-[0.1px];
+	@apply text-xs md:text-sm lg:text-base;
+	@apply font-[350] md:font-[380] lg:font-[415];
+}
+</style>

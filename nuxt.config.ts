@@ -4,7 +4,6 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxtjs/i18n',
         '@nuxtjs/seo',
-        'nuxt-gtag',
         'nuxt-icon',
     ],
     css: [
@@ -92,12 +91,6 @@ export default defineNuxtConfig({
             'tailwindcss/nesting': {},
             tailwindcss: {},
             autoprefixer: {},
-        },
-    },
-    devtools: {
-        enabled: true,
-        timeline: {
-            enabled: true,
         },
     },
     devServer: {

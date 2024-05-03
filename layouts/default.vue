@@ -3,6 +3,7 @@ import routes from '@/config/routes'
 import socials from '@/config/socials'
 
 const menuOpen = ref(false)
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -15,7 +16,7 @@ const menuOpen = ref(false)
 						<NuxtLink
 							v-for="link in routes"
 							:key="link.href"
-							:to="link.href"
+							:to="localePath(link.href)"
 							@click="menuOpen = false"
 						>
 							<div class="border-b border-carbon px-6 h-[70px] flex items-center">

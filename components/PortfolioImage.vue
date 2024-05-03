@@ -4,10 +4,6 @@ defineProps({
 		type: String,
 		required: true,
 	},
-	css: {
-		type: String,
-		default: 'h-[250px] md:h-[400px]',
-	},
 })
 </script>
 
@@ -17,13 +13,9 @@ defineProps({
 			:src="`/img/${img}.png`"
 			class="rounded-lg border border-carbon/50"
 			format="webp"
-			quality="90"
+			quality="100"
 			fit="cover"
 			loading="lazy"
 		/>
 	</div>
 </template>
-
-<style scoped>
-
-</style>

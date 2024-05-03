@@ -11,7 +11,7 @@ const route = useRoute()
 						<p class="text-sm font-mono text-red-400 font-medium">
 							[HTTP/1.1 <span class="font-bold text-red-300">404 Page not found</span>]
 						</p>
-						<p class="text-xs font-mono text-red-400/80 pt-0.5">
+						<p class="text-xxs font-mono text-red-400/80 pt-0.5">
 							GET <span class="underline">https://batuhan.io{{ route.fullPath }}</span>
 						</p>
 					</div>
@@ -38,9 +38,9 @@ const route = useRoute()
 				</div>
 				<NuxtLink
 					to="/"
-					class="border border-carbon inline-flex px-6 py-4 rounded bg-grey-400/5 w-full f-center mt-6 t-200 hover:opacity-80"
+					class="border border-carbon inline-flex py-4 rounded bg-grey-500/10 w-full f-center mt-4 t-200 hover:opacity-80"
 				>
-					<p class="text-sm font-bold font-mono text-light">
+					<p class="text-xs font-bold font-mono text-light">
 						Return Home
 					</p>
 				</NuxtLink>
@@ -51,14 +51,14 @@ const route = useRoute()
 
 <style scoped lang="postcss">
 .network-item {
-	@apply px-4 py-3;
+	@apply px-4 pt-3 pb-3.5;
 
 	label {
-		@apply text-xxs text-grey-300/75 font-mono uppercase;
+		@apply text-xxs text-grey-300 font-mono uppercase font-medium;
 	}
 
 	p {
-		@apply text-xs text-grey-100 font-[450];
+		@apply text-xs text-grey-100 font-medium pb-1;
 	}
 }
 </style>
