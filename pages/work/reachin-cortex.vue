@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import portfolio from '@/config/portfolio'
-
-const work = ref(portfolio.reachin_cortex)
+import { reachin_cortex as work } from '@/config/portfolio'
 </script>
 
 <template>
@@ -10,8 +8,8 @@ const work = ref(portfolio.reachin_cortex)
 			{{ $t(work.desc) }}
 		</template>
 		<template #category>
-			<p>Web App Development</p>
-			<p>Backend Development</p>
+			<p>{{ $t('api_backend_dev') }}</p>
+			<p>{{ $t('web_app_dev') }}</p>
 		</template>
 		<template #year>
 			2023 - 2024
@@ -24,11 +22,20 @@ const work = ref(portfolio.reachin_cortex)
 			/>
 		</template>
 		<div class="space-y-4">
-			<Description title="Database Design" />
-			<Description title="API Backend" />
-			<Description title="CRM Web Application" />
-			<Description title="Marketing Module" />
-			<Description title="Support Support" />
+			<Description
+				:title="$t('cortex.section1.title')"
+				:content="$t('cortex.section1.content')"
+			/>
+			<PortfolioImage img="cortex/01" />
+			<PortfolioImage img="cortex/02" />
+			<Description
+				class="pt-4"
+				:title="$t('cortex.section2.title')"
+				:content="$t('cortex.section2.content')"
+			/>
+			<PortfolioImage img="cortex/03" />
+			<PortfolioImage img="cortex/04" />
+			<PortfolioImage img="cortex/05" />
 		</div>
 	</PortfolioPage>
 </template>

@@ -1,19 +1,15 @@
 <script setup lang="ts">
-import portfolio from '@/config/portfolio'
-
-const work = ref(portfolio.reachin_app)
+import {reachin_app as work} from '@/config/portfolio'
 </script>
 
 <template>
 	<PortfolioPage :image="work.img" :title="work.title">
 		<template #desc>
-			Designed and Developed a hybrid mobile application for iOS and Android from scratch. I used Ionic Framework with
-			Vue as the front-end stack and created a Vue UI Kit for easily customizable UI components and a scalable
-			development process.
+			{{ $t('reachin_app.intro') }}
 		</template>
 		<template #category>
-			<p>Mobile Development</p>
-			<p>Mobile UI/UX Design</p>
+			<p>{{ $t('mobile_dev') }}</p>
+			<p>{{ $t('mobile_ui_ux') }}</p>
 		</template>
 		<template #year>
 			2023 - 2024

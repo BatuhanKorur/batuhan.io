@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-	<div class="md:p-6 lg:p-0 lg:max-w-[840px] lg:mx-auto">
+	<div class="md:p-6 lg:p-0 lg:py-4 lg:max-w-[840px] lg:mx-auto">
 		<div class="border-carbon md:border md:rounded lg:mt-5 lg:mx-4">
 			<NuxtImg
 				:src="`/img/portfolio/${image}`"
@@ -24,7 +24,7 @@ defineProps({
 				<h1 class="text-light font-semibold text-md tracking-[0.4px] md:text-lg md:tracking-[0.2px]">
 					{{ title }}
 				</h1>
-				<p class="text-grey-300 text-pretty break-words text-xs md:text-sm lg:text-base">
+				<p class="text-grey-200 text-pretty break-words text-xs md:text-sm lg:text-base">
 					<slot name="desc" />
 				</p>
 			</div>

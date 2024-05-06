@@ -1,30 +1,30 @@
 <script setup lang="ts">
-import routes from '@/config/routes'
-import socials from '@/config/socials'
+import {links, socials} from '@/config/links'
 
 const menuOpen = ref(false)
-const localePath = useLocalePath()
 </script>
 
 <template>
 	<div class="wrapper">
 		<div class="container">
-			<Navbar v-model="menuOpen" class="z-50" />
+			<Navbar v-model="menuOpen" class="z-50">
+				<AppLink
+					v-for="link in links"
+					:key="link.href"
+					:href="link.href"
+					:label="$t(link.label)"
+				/>
+			</Navbar>
 			<div class="grow flex flex-col h-full">
 				<Transition name="page" mode="out-in">
 					<div v-if="menuOpen" class="grow">
-						<NuxtLink
-							v-for="link in routes"
+						<AppLink
+							v-for="link in links"
 							:key="link.href"
-							:to="localePath(link.href)"
-							@click="menuOpen = false"
-						>
-							<div class="border-b border-carbon px-6 h-[70px] flex items-center">
-								<p class="text-light font-mono text-base lowercase font-[425]">
-									{{ $t(link.label) }}
-								</p>
-							</div>
-						</NuxtLink>
+							:href="link.href"
+							:label="$t(link.label)"
+							@click="menuOpen = false "
+						/>
 					</div>
 					<template v-else>
 						<div class="grow flex flex-col relative overflow-hidden">

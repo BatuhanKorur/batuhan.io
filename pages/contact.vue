@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import socials from '@/config/socials'
+import {socials} from '@/config/links'
 </script>
 
 <template>
 	<div class="flex flex-col">
-		<Header>
-			{{ $t('contact') }}
-		</Header>
+		<Header :title="$t('contact')" />
 		<div class="bg-[#101218] lg:border-b border-carbon">
 			<Code n="1">
 				<template #comment>

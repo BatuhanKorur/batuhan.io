@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import portfolio from '@/config/portfolio'
-
-const work = ref(portfolio.dispatch_app)
+import { dispatch_app as work } from '@/config/portfolio'
 </script>
 
 <template>
@@ -10,7 +8,8 @@ const work = ref(portfolio.dispatch_app)
 			{{ $t(work.desc) }}
 		</template>
 		<template #category>
-			<p>Mobile Development</p>
+			<p>{{ $t('mobile_dev') }}</p>
+			<p>{{ $t('ui_ux') }}</p>
 		</template>
 		<template #year>
 			2023 - 2024

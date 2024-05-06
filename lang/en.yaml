@@ -1,21 +1,67 @@
+# General
 hello: "Hello 👋, I'm"
 about: 'About'
 portfolio: 'Portfolio'
 contact: 'Contact'
 experience: 'Work Experience'
 present: 'Present'
-download_resume: 'Download Resume'
-view_project: 'View Project'
-contact_via_email: 'Contact via email'
-link_via_socials: 'Link through social media'
-category: 'Category'
 year: 'Year'
+category: 'Category'
 tech_stack: 'Tech Stack'
 
+# Buttons
+download_resume: 'Download Resume'
+view_project: 'View Project'
+
+# Contact
+contact_via_email: 'Contact via email'
+link_via_socials: 'Link through social media'
+
+# Developer
+web_app_dev: 'Web App Development'
+web_dev: 'Web Development'
+api_backend_dev: 'API Backend Development'
+backend_dev: 'Backend Development'
+mobile_dev: 'Mobile Development'
+mobile_ui_ux: 'Mobile UI/UX Design'
+ui_ux: 'UI/UX Design'
+
+# About
 about_me:
   - I began coding at the age of 13 with Visual Basic. I crafted simple applications as a hobby and shared them online. After 14 years, what started as a hobby has flourished into a career with a keen specialization in front-end engineering with Javascript and Laravel.
   - Dedicated to lifelong learning in software development, I have earned three MCSA certifications from Microsoft, covering essential technologies such as HTML5, CSS3, JavaScript, and ASP.Net. My linguistic studies, which resulted in a bachelor’s degree from Istanbul University, have equipped me to effectively communicate complex UI concepts to a broad range of users.
   - My technical proficiency centres on JavaScript,  including its popular frameworks Vue, React and Ionic, further extending to PHP and Laravel for backend operations, accompanied by a diverse toolkit of other technologies.
+
+# Portfolio -> Reachin App
+reachin_app:
+  description: A hybrid mobile application built for iOS and Android, using Ionic Framework with Vue as the front end and communicating with an API backend for server operations.
+  intro: Designed and Developed a hybrid mobile application for iOS and Android from scratch. I used Ionic Framework with
+    Vue as the front-end stack and created a Vue UI Kit for easily customizable UI components and a scalable
+    development process.
+
+# Portfolio -> Cortex
+cortex:
+  description: REST API server for Reachin Mobile App using Laravel Framework. Cortex also acts as a web application to manage various database and business-related operations.
+  section1:
+    title: Database Design and API
+    content: Acting as the API backend for the mobile application and a business administration web app, Cortex presented a
+      challenge in database construction. To ensure a solid foundation, I meticulously constructed an SQL schema
+      detailing every data point and its relationships with other tables before delving into coding.
+  section2:
+    title: Web Application
+    content: To drive the web application interface, I integrated Inertia.js and Vue to facilitate efficient CRUD operations. Admin users possess the authority to access all data, utilize sophisticated filtering options, and customize the visibility settings for table content.
+
+# Portfolio -> Brickhunter
+brickhunter:
+  description: Revamping Brickhunter's e-commerce website with a fresh and contemporary user interface. Building new front-end elements and features using Laravel, Livewire, Alpine and Vue.
+
+# Portfolio -> UPS
+ups:
+  description: Single page web application for digitizing business operations. Handling various features such as CRM, invoice generation, marketing metrics and in-app messagin system.
+
+# Portfolio -> Dispatch
+dispatch_app:
+  description: Hybrid mobile application for couriers to manage their delivery processes. Built with  Laravel, Interia.js and Cordova.
 
 work_experience:
   reachin:
@@ -48,18 +94,3 @@ work_experience:
     list:
       - Created and developed a web and mobile application for valet parking businesses to easily track customers and business metrics.
       - Created a digitized restaurant menu for tablets, elevating the customer experience to a more luxurious level while also providing an easily managed process to update menu items, enhancing the business's agility and efficiency.
-
-reachin_app:
-  desc: A hybrid mobile application built for iOS and Android, using Ionic Framework with Vue as the front end and communicating with an API backend for server operations.
-
-reachin_cortex:
-  desc: REST API server for Reachin App using Laravel Framework Using Inertia and Vue as a front-end engine, it also acts as a web application to manage various database and business-related operations.
-
-brickhunter:
-  desc: Redesigning Brickhunter's e-commerce website with a new and modern UI, using Livewire, Alpine, and Vue as front-end frameworks. Building various new modules and API's with PHP and Laravel.
-
-ups:
-  desc: A single-page web application for digitising business operations. Features include CRM, invoice generation, marketing metrics, an in-app messaging system, and more.
-
-dispatch_app:
-  desc: A hybrid mobile application for couriers to manage their delivery processes. The application was built with Javascript, Vue, and Tailwindcss, using Cordova as the app engine, which works seamlessly with Android OS.

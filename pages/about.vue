@@ -1,9 +1,7 @@
 <template>
 	<div class="grid grid-cols-1 lg:grid-cols-2">
 		<div class="lg:border-r border-carbon">
-			<Header>
-				{{ $t('about') }}
-			</Header>
+			<Header :title="$t('about')" />
 			<section class="p-5 lg:p-8">
 				<h2 class="text-[48px]">
 					🧑‍💻
@@ -13,7 +11,7 @@
 					<Text>{{ $t('about_me.1') }}</Text>
 					<Text>{{ $t('about_me.2') }}</Text>
 				</div>
-				<div class="flex py-5 lg:flex-row-reverse mr-1">
+				<div class="flex pt-10">
 					<Button href="https://batuhan.io/cv_batuhan-korur.pdf" download>
 						{{ $t('download_resume') }}
 					</Button>
@@ -21,9 +19,7 @@
 			</section>
 		</div>
 		<div>
-			<Header class="border-t border-b-0 lg:border-b lg:border-t-0">
-				{{ $t('experience') }}
-			</Header>
+			<Header class="border-t border-b-0 lg:border-b lg:border-t-0" :title="$t('experience')" />
 			<section>
 				<ExpCard
 					company="Reachin"

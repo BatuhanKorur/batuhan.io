@@ -1,18 +1,15 @@
 <script setup lang="ts">
-import portfolio from '@/config/portfolio'
-
-const work = ref(portfolio.brickhunter)
+import { brickhunter as work } from '@/config/portfolio'
 </script>
 
 <template>
 	<PortfolioPage :image="work.img" :title="work.title">
 		<template #desc>
-			Redesigning Brickhunter's e-commerce website with a new and modern UI, using Livewire, Alpine, and Vue as
-			front-end frameworks. Building various new modules and API's with PHP and Laravel.
+			{{ $t(work.desc) }}
 		</template>
 		<template #category>
-			<p>Web Development</p>
-			<p>UI/UX Design</p>
+			<p>{{ $t('web_dev') }}</p>
+			<p>{{ $t('ui_ux') }}</p>
 		</template>
 		<template #year>
 			2022 - 2023

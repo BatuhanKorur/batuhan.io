@@ -4,10 +4,13 @@
 .nuxt
 .nitro
 .cache
+.yarn
 dist
 
 # Node dependencies
 node_modules
+server/server.crt
+server/server.key
 
 # Logs
 logs

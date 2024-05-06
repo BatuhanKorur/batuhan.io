@@ -1,4 +1,33 @@
-export default {
+interface Link {
+    label: string,
+    href: string,
+}
+
+const links: Link[] = [
+    {
+        label: 'about',
+        href: '/about'
+    },
+    {
+        label: 'portfolio',
+        href: '/portfolio'
+    },
+    {
+        label: 'contact',
+        href: '/contact'
+    }
+]
+
+interface Social {
+    [key: string]: {
+        icon: string,
+        url: string,
+        url_pretty: string
+    }
+}
+
+
+const socials: Social = {
     github: {
         icon: 'ri:github-fill',
         url: 'https://github.com/BatuhanKorur',
@@ -14,4 +43,9 @@ export default {
         url: 'https://www.instagram.com/batuhan.korur/',
         url_pretty: 'instagram.com/batuhan.korur'
     }
+}
+
+export {
+    links,
+    socials
 }

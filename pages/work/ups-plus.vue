@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import portfolio from '@/config/portfolio'
-
-const work = ref(portfolio.ups)
+import { ups as work } from '@/config/portfolio'
 </script>
 
 <template>
@@ -10,7 +8,8 @@ const work = ref(portfolio.ups)
 			{{ $t(work.desc) }}
 		</template>
 		<template #category>
-			<p>Web Development</p>
+			<p>{{ $t('web_dev') }}</p>
+			<p>{{ $t('api_backend_dev') }}</p>
 		</template>
 		<template #year>
 			2023 - 2024
