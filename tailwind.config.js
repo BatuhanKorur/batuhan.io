@@ -34,8 +34,17 @@ export default {
 			'xl': ['20px', {
 				lineHeight: '1.4em',
 			}],
-			'2xl': ['24px', {
-				lineHeight: '1.4em',
+			'2xl': ['23px', {
+				lineHeight: '1.25em',
+			}],
+			'3xl': ['27px', {
+				lineHeight: '1.25em',
+			}],
+			'4xl': ['31px', {
+				lineHeight: '1.2em',
+			}],
+			'5xl': ['36px', {
+				lineHeight: '1.2em',
 			}],
 		},
 		extend: {

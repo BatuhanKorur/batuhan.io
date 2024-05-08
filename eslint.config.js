@@ -10,6 +10,7 @@ export default antfu({
 		indent: 'tab',
 		quotes: 'single',
 	},
+	ignores: ['**/*.md'],
 }, {
 	files: ['**/*.vue'],
 	languageOptions: {
@@ -17,6 +18,9 @@ export default antfu({
 			useI18n: 'readonly',
 			useRoute: 'readonly',
 			useLocalePath: 'readonly',
+			useSchemaOrg: 'readonly',
+			useContent: 'readonly',
+			defineArticle: 'readonly',
 		},
 	},
 	rules: {

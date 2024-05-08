@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {links, socials} from '@/config/links'
+import { links, socials } from '@/config/links'
 
 const menuOpen = ref(false)
 </script>
@@ -13,6 +13,7 @@ const menuOpen = ref(false)
 					:key="link.href"
 					:href="link.href"
 					:label="$t(link.label)"
+					class="last:border-r border-carbon"
 				/>
 			</Navbar>
 			<div class="grow flex flex-col h-full">
@@ -28,7 +29,7 @@ const menuOpen = ref(false)
 					</div>
 					<template v-else>
 						<div class="grow flex flex-col relative overflow-hidden">
-							<div class="grow h-full">
+							<div class="grow h-full w-full">
 								<slot />
 							</div>
 						</div>

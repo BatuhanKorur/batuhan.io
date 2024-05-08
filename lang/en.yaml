@@ -3,6 +3,7 @@ hello: "Hello 👋, I'm"
 about: 'About'
 portfolio: 'Portfolio'
 contact: 'Contact'
+blog: 'Blog'
 experience: 'Work Experience'
 present: 'Present'
 year: 'Year'

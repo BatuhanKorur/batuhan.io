@@ -3,6 +3,7 @@ hello: "Merhaba 👋, ben"
 about: 'Hakkımda'
 portfolio: 'Portfolyo'
 contact: 'İletişim'
+blog: 'Blog'
 experience: 'İş Deneyimi'
 present: 'Günümüz'
 year: 'Yıl'

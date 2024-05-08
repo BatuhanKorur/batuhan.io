@@ -13,9 +13,13 @@ const links: Link[] = [
         href: '/portfolio'
     },
     {
+        label: 'blog',
+        href: '/blog'
+    },
+    {
         label: 'contact',
         href: '/contact'
-    }
+    },
 ]
 
 interface Social {

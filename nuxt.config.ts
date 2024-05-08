@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxt/image',
+        '@nuxt/content',
         '@nuxtjs/i18n',
         '@nuxtjs/seo',
         'nuxt-icon',
@@ -9,6 +10,15 @@ export default defineNuxtConfig({
     css: [
         '~/assets/css/main.css'
     ],
+    content: {
+        documentDriven: true,
+        highlight: {
+            theme: 'github-dark',
+            langs: [
+                'js', 'ts', 'html', 'css', 'vue', 'bash', 'json', 'php', 'zsh'
+            ]
+        }
+    },
     app: {
         pageTransition: {
             name: 'page',

@@ -13,6 +13,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/content": "^2.12.1",
     "@nuxt/image": "^1.6.0",
     "@unhead/vue": "^1.9.8",
     "@vercel/analytics": "^1.2.2",
