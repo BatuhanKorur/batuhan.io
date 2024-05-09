@@ -66,6 +66,12 @@ export default defineNuxtConfig({
         name: 'Batuhan Korur | Front-end Engineer',
         description: 'Born and raised in London, currently in Istanbul. My technical proficiency centres on Javascript and its popular frameworks and extends to PHP and Laravel.'
     },
+    robots: {
+        sitemap: [
+            '/en-sitemap.xml',
+            '/tr-sitemap.xml'
+        ]
+    },
     schemaOrg: {
         identity: {
             type: 'Person',
@@ -82,6 +88,7 @@ export default defineNuxtConfig({
         }
     },
     i18n: {
+        baseUrl: 'https://batuhan.io',
         defaultLocale: 'en',
         langDir: 'lang',
         locales: [

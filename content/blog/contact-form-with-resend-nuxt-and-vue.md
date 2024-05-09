@@ -1,8 +1,9 @@
 ---
 title: Creating Contact Form with Resend using Nuxt and Vue
 description: Learn how to build a contact form with resend functionality using Nuxt.js and Vue.js in this detailed step-by-step tutorial. Enhance user experience and ensure reliable data submission with modern web technologies.
-date: 8 May, 2024
+date: 2024-05-08T12:00:00.000Z
 img: '/blog/001.svg'
+tags: ['vue', 'nuxt', 'resend']
 ---
 
 In this guide, we will walk through the process of building a contact form with [Nuxt & Vue](https://nuxt.com/), utilizing Resend.

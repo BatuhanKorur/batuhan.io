@@ -27,19 +27,19 @@ const isActive = computed(() => {
 
 <style scoped lang="postcss">
 .link {
-	@apply flex items-center border-carbon px-6 md:px-8;
-	@apply font-mono font-[520] tracking-[0.2px] h-[72px] md:h-full;
-	@apply border-b md:border-b-0 md:border-l;
+	@apply flex items-center px-6 md:px-8;
+	@apply border-carbon border-b md:border-b-0 md:border-l;
+	@apply font-mono font-medium tracking-[0.2px] h-[72px] md:h-full;
 
 	span {
-		@apply lowercase text-base;
+		@apply lowercase text-sm;
 
 		&.active {
 			@apply text-accent;
 		}
 
 		&:not(.active) {
-			@apply text-light/75;
+			@apply text-light/80;
 		}
 	}
 }

@@ -10,7 +10,6 @@ export default antfu({
 		indent: 'tab',
 		quotes: 'single',
 	},
-	ignores: ['**/*.md'],
 }, {
 	files: ['**/*.vue'],
 	languageOptions: {

@@ -1,9 +1,8 @@
 {
   "name": "batuhan.io",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "Batuhan Korur - personal website",
   "author": "Batuhan Korur <mail@batuhan.io>",
-  "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
@@ -14,18 +13,18 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.12.1",
-    "@nuxt/image": "^1.6.0",
-    "@unhead/vue": "^1.9.8",
+    "@nuxt/image": "^1.7.0",
+    "@unhead/vue": "^1.9.10",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "@vueuse/core": "^10.9.0",
     "nuxt": "^3.11.2",
-    "vue": "^3.4.26",
+    "vue": "^3.4.27",
     "vue-router": "^4.3.2",
     "vue3-popper": "^1.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.16.1",
+    "@antfu/eslint-config": "^2.17.0",
     "@nuxtjs/i18n": "^8.3.1",
     "@nuxtjs/seo": "^2.0.0-rc.10",
     "autoprefixer": "^10.4.19",
