@@ -26,7 +26,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="md:col-span-3 f-center border border-carbon rounded-md backdrop-brightness-125">
+					<div class="md:col-span-3 f-center border border-carbon rounded-md bg-blue-400/10">
 						<NuxtImg :src="article.img" class="object-contain w-full h-[240px] py-8 lg:py-10" />
 					</div>
 				</NuxtLink>

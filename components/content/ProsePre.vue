@@ -18,6 +18,8 @@ const icon = computed(() => {
 			return 'vscode-icons:file-type-dotenv'
 		case 'vue':
 			return 'logos:vue'
+		case 'yaml':
+			return 'vscode-icons:file-type-light-yaml'
 		default:
 			return 'logos:terminal'
 	}
