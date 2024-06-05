@@ -63,7 +63,7 @@ export default defineNuxtConfig({
     },
     site: {
         url: 'https://batuhan.io',
-        name: 'Batuhan Korur | Front-end Engineer',
+        name: 'Batuhan Korur | Full-stack Developer',
         description: 'Born and raised in London, currently in Istanbul. My technical proficiency centres on Javascript and its popular frameworks and extends to PHP and Laravel.'
     },
     robots: {
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
             name: 'Batuhan Korur',
             url: 'https://batuhan.io',
             logo: 'https://batuhan.io/logo.png',
-            description: 'Front-end Engineer from Istanbul',
+            description: 'Full-stack Developer from Istanbul',
             sameAs: [
                 'https://github.com/BatuhanKorur',
                 'https://www.linkedin.com/in/batuhankorur/',

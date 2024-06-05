@@ -11,7 +11,7 @@
 				<div class="flex items-end space-x-3 pt-4 md:pt-6 lg:pt-8">
 					<Icon name="octicon:command-palette-16" class="size-lg text-accent animate-pulse lg:size-[20px]" />
 					<p class="font-mono text-accent font-[450] text-md leading-none lg:text-lg">
-						Front-end Engineer
+						Full-stack Developer
 					</p>
 				</div>
 			</div>

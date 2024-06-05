@@ -12,7 +12,7 @@
 					<Text>{{ $t('about_me.2') }}</Text>
 				</div>
 				<div class="flex pt-10">
-					<Button href="https://batuhan.io/cv_batuhan-korur.pdf" download>
+					<Button href="https://batuhan.io/cv.pdf" download>
 						{{ $t('download_resume') }}
 					</Button>
 				</div>
