@@ -5,7 +5,26 @@ export default defineNuxtConfig({
         '@nuxt/content',
         '@nuxtjs/i18n',
         'nuxt-icon',
+        "@nuxtjs/seo"
     ],
+    ogImage: {
+        enabled: true
+    },
+    sitemap: {
+        enabled: true
+    },
+    robots: {
+        enabled: true
+    },
+    seoExperiments: {
+        enabled: true
+    },
+    schemaOrg: {
+        enabled: true
+    },
+    linkChecker: {
+        enabled: true
+    },
     css: [
         '~/assets/css/main.css'
     ],
@@ -63,28 +82,8 @@ export default defineNuxtConfig({
     site: {
         url: 'https://batuhan.io',
         name: 'Batuhan Korur | Full-stack Developer',
-        description: 'Born and raised in London, currently in Istanbul. My technical proficiency centres on Javascript and its popular frameworks and extends to PHP and Laravel.'
-    },
-    robots: {
-        sitemap: [
-            '/en-sitemap.xml',
-            '/tr-sitemap.xml'
-        ]
-    },
-    schemaOrg: {
-        identity: {
-            type: 'Person',
-            name: 'Batuhan Korur',
-            url: 'https://batuhan.io',
-            logo: 'https://batuhan.io/logo.png',
-            description: 'Full-stack Developer from Istanbul',
-            sameAs: [
-                'https://github.com/BatuhanKorur',
-                'https://www.linkedin.com/in/batuhankorur/',
-                'https://www.instagram.com/batuhan.korur/',
-                'https://www.facebook.com/batuhankorur',
-            ]
-        }
+        description: 'Born and raised in London, currently in Istanbul. My technical proficiency centres on Javascript and its popular frameworks and extends to PHP and Laravel.',
+        defaultLocale: 'en',
     },
     i18n: {
         baseUrl: 'https://batuhan.io',
