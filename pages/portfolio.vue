@@ -11,7 +11,7 @@ const portfolio = {
 </script>
 
 <template>
-	<div>
+	<NuxtLayout>
 		<Header :title="$t('portfolio')" />
 		<div class="grid grid-cols-1 lg:grid-cols-2">
 			<div
@@ -48,5 +48,5 @@ const portfolio = {
 				</div>
 			</div>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>
