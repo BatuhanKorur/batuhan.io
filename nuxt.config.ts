@@ -4,7 +4,6 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxt/content',
         '@nuxtjs/i18n',
-        '@nuxtjs/seo',
         'nuxt-icon',
     ],
     css: [

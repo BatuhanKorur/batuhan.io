@@ -1,18 +1,6 @@
 <script setup lang="ts">
 const { page } = useContent()
 const article = ref(page.value)
-useSchemaOrg([
-	defineArticle({
-		'@type': 'BlogPosting',
-		'headline': article.value.title,
-		'description': article.value.description,
-		'author': 'Batuhan Korur',
-		'image': article.value.img,
-		'datePublished': article.value.date,
-		'dateModified': article.value.date,
-		'keywords': [...article.value.tags, 'batuhan korur'],
-	}),
-])
 </script>
 
 <template>
