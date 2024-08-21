@@ -8,11 +8,11 @@ words and images are licensed under <a href='https://creativecommons.org/license
 
 ```bash
 # Setup - Installing the dependencies
-yarn install
+pnpm install
 
 # Starting the development server
-yarn dev
+pnpm dev
 
 # Build the application for production
-yarn build
+pnpm build
 ```
