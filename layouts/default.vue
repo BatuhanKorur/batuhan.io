@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import SpeedInsights from '@vercel/speed-insights'
 import { links, socials } from '@/config/links'
 
 const menuOpen = ref(false)
@@ -57,7 +56,6 @@ const menuOpen = ref(false)
 				</div>
 			</div>
 		</div>
-		<SpeedInsights />
 	</div>
 </template>
 
